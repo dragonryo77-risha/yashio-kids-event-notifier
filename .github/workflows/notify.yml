@@ -20,6 +20,13 @@ jobs:
           python-version: "3.11"
 
       - run: pip install -r requirements.txt
+      - name: Debug token length (troubleshooting only)
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+        run: |
+          echo "token length: ${#LINE_CHANNEL_ACCESS_TOKEN}"
+          echo "first 6 chars: ${LINE_CHANNEL_ACCESS_TOKEN:0:6}"
+          echo "last 6 chars: ${LINE_CHANNEL_ACCESS_TOKEN: -6}"
 
       - name: Run notifier
         env:
