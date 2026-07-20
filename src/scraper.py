@@ -29,6 +29,8 @@ def parse_goguynet(html: str, source_label: str) -> list[dict]:
         title = title_el.get_text(strip=True) if title_el else a.get_text(strip=True)
         date_el = a.select_one(".listDate01")
         published_at = date_el.get_text(strip=True) if date_el else ""
+        img_el = a.select_one("img")
+        image_url = img_el.get("src", "").strip() if img_el else ""
         if not title:
             continue
         events.append({
@@ -36,6 +38,7 @@ def parse_goguynet(html: str, source_label: str) -> list[dict]:
             "url": a["href"].strip(),
             "published_at": published_at,
             "source": source_label,
+            "image_url": image_url,
         })
     return events
 
@@ -49,11 +52,14 @@ def parse_yashion(html: str, source_label: str) -> list[dict]:
             continue
         time_el = article.select_one("time")
         published_at = time_el.get_text(strip=True) if time_el else ""
+        img_el = article.select_one(".entry_pic img")
+        image_url = img_el.get("src", "").strip() if img_el else ""
         events.append({
             "title": a.get_text(strip=True),
             "url": a["href"].strip(),
             "published_at": published_at,
             "source": source_label,
+            "image_url": image_url,
         })
     return events
 

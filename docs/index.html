@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>やしお子供向けイベントカレンダー</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fafafa;
+    --card: #ffffff;
+    --text: #222222;
+    --muted: #888888;
+    --border: #e5e5e5;
+    --accent: #e91e63;
+    --accent-bg: #fde7ef;
+    --today-bg: #fff3cd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16171a;
+      --card: #212226;
+      --text: #eaeaea;
+      --muted: #9a9a9a;
+      --border: #34353a;
+      --accent: #ff6f9c;
+      --accent-bg: #3a1f29;
+      --today-bg: #3a3316;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 16px;
+  }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  .sub { color: var(--muted); font-size: 0.85rem; margin-bottom: 16px; }
+  .nav {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .nav button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 14px; font-size: 1rem; cursor: pointer;
+  }
+  .nav .month-label { font-weight: bold; font-size: 1.1rem; }
+  table.calendar { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  .calendar th {
+    font-size: 0.75rem; color: var(--muted); font-weight: normal; padding: 4px 0;
+  }
+  .calendar td {
+    vertical-align: top; border: 1px solid var(--border); height: 92px;
+    padding: 4px; font-size: 0.75rem; overflow: hidden;
+  }
+  .calendar td.other-month { opacity: 0.35; }
+  .calendar td.today { background: var(--today-bg); }
+  .day-num { font-weight: bold; margin-bottom: 2px; }
+  .chip {
+    display: block; background: var(--accent-bg); color: var(--text);
+    border-radius: 5px; padding: 2px 4px; margin-bottom: 2px;
+    text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .chip:hover { outline: 1px solid var(--accent); }
+  .more { color: var(--muted); font-size: 0.7rem; }
+  section.unscheduled { margin-top: 24px; }
+  section.unscheduled h2 { font-size: 1rem; }
+  .card {
+    display: flex; gap: 10px; background: var(--card); border: 1px solid var(--border);
+    border-radius: 10px; padding: 10px; margin-bottom: 8px; text-decoration: none; color: var(--text);
+  }
+  .card img { width: 72px; height: 48px; object-fit: cover; border-radius: 6px; flex-shrink: 0; }
+  .card .meta { color: var(--muted); font-size: 0.75rem; }
+  .card .title { font-weight: bold; font-size: 0.9rem; }
+  .empty { color: var(--muted); padding: 20px 0; text-align: center; }
+</style>
+</head>
+<body>
+  <h1>やしお子供向けイベントカレンダー</h1>
+  <div class="sub" id="generated"></div>
+
+  <div class="nav">
+    <button id="prevBtn">◀ 前の月</button>
+    <div class="month-label" id="monthLabel"></div>
+    <button id="nextBtn">次の月 ▶</button>
+  </div>
+  <table class="calendar">
+    <thead><tr id="weekdayRow"></tr></thead>
+    <tbody id="calendarBody"></tbody>
+  </table>
+
+  <section class="unscheduled">
+    <h2>日付未定・その他の新着</h2>
+    <div id="unscheduledList"></div>
+  </section>
+
+<script>
+const WEEKDAYS = ["日", "月", "火", "水", "木", "金", "土"];
+let events = [];
+let viewYear, viewMonth; // viewMonth: 0-11
+
+function toDate(iso) {
+  const [y, m, d] = iso.split("-").map(Number);
+  return new Date(y, m - 1, d);
+}
+
+function render() {
+  document.getElementById("monthLabel").textContent = `${viewYear}年${viewMonth + 1}月`;
+
+  const weekdayRow = document.getElementById("weekdayRow");
+  weekdayRow.innerHTML = WEEKDAYS.map(w => `<th>${w}</th>`).join("");
+
+  const firstDay = new Date(viewYear, viewMonth, 1);
+  const startOffset = firstDay.getDay();
+  const daysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate();
+  const today = new Date();
+  const todayStr = today.toISOString().slice(0, 10);
+
+  const byDate = {};
+  for (const e of events) {
+    if (!e.event_date) continue;
+    (byDate[e.event_date] ||= []).push(e);
+  }
+
+  const cells = [];
+  for (let i = 0; i < startOffset; i++) {
+    const d = new Date(viewYear, viewMonth, 1 - (startOffset - i));
+    cells.push({ date: d, otherMonth: true });
+  }
+  for (let d = 1; d <= daysInMonth; d++) {
+    cells.push({ date: new Date(viewYear, viewMonth, d), otherMonth: false });
+  }
+  while (cells.length % 7 !== 0) {
+    const last = cells[cells.length - 1].date;
+    cells.push({ date: new Date(last.getFullYear(), last.getMonth(), last.getDate() + 1), otherMonth: true });
+  }
+
+  const body = document.getElementById("calendarBody");
+  body.innerHTML = "";
+  for (let r = 0; r < cells.length / 7; r++) {
+    const tr = document.createElement("tr");
+    for (let c = 0; c < 7; c++) {
+      const cell = cells[r * 7 + c];
+      const iso = cell.date.toISOString().slice(0, 10);
+      const td = document.createElement("td");
+      td.className = (cell.otherMonth ? "other-month " : "") + (iso === todayStr ? "today" : "");
+      const dayEvents = byDate[iso] || [];
+      const shown = dayEvents.slice(0, 3);
+      const rest = dayEvents.length - shown.length;
+      td.innerHTML = `<div class="day-num">${cell.date.getDate()}</div>` +
+        shown.map(e => `<a class="chip" href="${e.url}" target="_blank" title="${e.title}">${e.title}</a>`).join("") +
+        (rest > 0 ? `<div class="more">+${rest}件</div>` : "");
+      tr.appendChild(td);
+    }
+    body.appendChild(tr);
+  }
+
+  const unscheduled = events.filter(e => !e.event_date)
+    .sort((a, b) => (b.published_at || "").localeCompare(a.published_at || ""));
+  const list = document.getElementById("unscheduledList");
+  if (unscheduled.length === 0) {
+    list.innerHTML = `<div class="empty">なし</div>`;
+  } else {
+    list.innerHTML = unscheduled.map(e => `
+      <a class="card" href="${e.url}" target="_blank">
+        <img src="${e.image_url || ''}" onerror="this.style.display='none'">
+        <div>
+          <div class="title">${e.title}</div>
+          <div class="meta">${e.source} ・ ${e.published_at || ""}</div>
+        </div>
+      </a>`).join("");
+  }
+}
+
+document.getElementById("prevBtn").onclick = () => {
+  viewMonth--; if (viewMonth < 0) { viewMonth = 11; viewYear--; }
+  render();
+};
+document.getElementById("nextBtn").onclick = () => {
+  viewMonth++; if (viewMonth > 11) { viewMonth = 0; viewYear++; }
+  render();
+};
+
+fetch("./events.json?_=" + Date.now())
+  .then(r => r.json())
+  .then(data => {
+    events = data.events || [];
+    document.getElementById("generated").textContent = data.generated_at ? `最終更新: ${data.generated_at}` : "";
+    const now = new Date();
+    viewYear = now.getFullYear();
+    viewMonth = now.getMonth();
+    render();
+  })
+  .catch(err => {
+    document.getElementById("calendarBody").innerHTML = "";
+    document.getElementById("unscheduledList").innerHTML = `<div class="empty">データの読み込みに失敗しました</div>`;
+    console.error(err);
+  });
+</script>
+</body>
+</html>
