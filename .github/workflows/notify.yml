@@ -2,8 +2,8 @@ name: Notify kids events
 
 on:
   schedule:
-    # 毎日 7:30 JST (=22:30 UTC 前日) に実行
-    - cron: "30 22 * * *"
+    # 毎週水曜 7:30 JST (=火曜 22:30 UTC) に実行
+    - cron: "30 22 * * 2"
   workflow_dispatch: {}
 
 permissions:
@@ -24,6 +24,7 @@ jobs:
       - name: Run notifier
         env:
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python src/main.py
 
       - name: Commit updated state

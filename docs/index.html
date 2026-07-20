@@ -74,6 +74,7 @@
   .card img { width: 72px; height: 48px; object-fit: cover; border-radius: 6px; flex-shrink: 0; }
   .card .meta { color: var(--muted); font-size: 0.75rem; }
   .card .title { font-weight: bold; font-size: 0.9rem; }
+  .card .rec { font-size: 0.8rem; color: var(--text); margin-top: 4px; }
   .empty { color: var(--muted); padding: 20px 0; text-align: center; }
 </style>
 </head>
@@ -150,7 +151,10 @@ function render() {
       const shown = dayEvents.slice(0, 3);
       const rest = dayEvents.length - shown.length;
       td.innerHTML = `<div class="day-num">${cell.date.getDate()}</div>` +
-        shown.map(e => `<a class="chip" href="${e.url}" target="_blank" title="${e.title}">${e.title}</a>`).join("") +
+        shown.map(e => {
+          const tip = e.recommendation ? `${e.title}\n💡 ${e.recommendation}` : e.title;
+          return `<a class="chip" href="${e.url}" target="_blank" title="${tip}">${e.title}</a>`;
+        }).join("") +
         (rest > 0 ? `<div class="more">+${rest}件</div>` : "");
       tr.appendChild(td);
     }
@@ -169,6 +173,7 @@ function render() {
         <div>
           <div class="title">${e.title}</div>
           <div class="meta">${e.source} ・ ${e.published_at || ""}</div>
+          ${e.recommendation ? `<div class="rec">💡 ${e.recommendation}</div>` : ""}
         </div>
       </a>`).join("");
   }

@@ -3,6 +3,7 @@ from datetime import date
 from date_utils import extract_event_date, parse_published_date
 from filters import filter_events
 from notifier import notify_new_events
+from recommend import generate_recommendations
 from scraper import collect_events
 from sources import SOURCES
 from store import load_events, prune, save_events
@@ -30,6 +31,10 @@ def main() -> None:
         new_events.append(e)
         existing[e["url"]] = e
     print(f"未通知の新着: {len(new_events)}")
+
+    recommendations = generate_recommendations(new_events)
+    for e in new_events:
+        e["recommendation"] = recommendations.get(e["url"], "")
 
     existing = prune(existing, today)
     save_events(existing)

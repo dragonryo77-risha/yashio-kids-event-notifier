@@ -19,6 +19,20 @@ PLACEHOLDER_IMAGE = "https://placehold.co/1024x682?text=NO+IMAGE"
 def _bubble(e: dict) -> dict:
     image_url = e.get("image_url") or PLACEHOLDER_IMAGE
     date_text = e.get("event_date") or e.get("published_at") or "日付不明"
+    body_contents = [
+        {"type": "text", "text": date_text, "size": "sm", "color": "#e91e63", "weight": "bold"},
+        {"type": "text", "text": e["title"], "wrap": True, "weight": "bold", "size": "md"},
+        {"type": "text", "text": e["source"], "size": "xs", "color": "#999999"},
+    ]
+    if e.get("recommendation"):
+        body_contents.append({
+            "type": "text",
+            "text": f"💡 {e['recommendation']}",
+            "wrap": True,
+            "size": "xs",
+            "color": "#555555",
+            "margin": "md",
+        })
     return {
         "type": "bubble",
         "hero": {
@@ -32,11 +46,7 @@ def _bubble(e: dict) -> dict:
             "type": "box",
             "layout": "vertical",
             "spacing": "sm",
-            "contents": [
-                {"type": "text", "text": date_text, "size": "sm", "color": "#e91e63", "weight": "bold"},
-                {"type": "text", "text": e["title"], "wrap": True, "weight": "bold", "size": "md"},
-                {"type": "text", "text": e["source"], "size": "xs", "color": "#999999"},
-            ],
+            "contents": body_contents,
         },
         "footer": {
             "type": "box",
