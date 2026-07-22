@@ -32,14 +32,20 @@ def main() -> None:
         existing[e["url"]] = e
     print(f"未通知の新着: {len(new_events)}")
 
-    recommendations = generate_recommendations(new_events)
-    for e in new_events:
+    today_iso = today.isoformat()
+    notify_events = [e for e in new_events if not e["event_date"] or e["event_date"] >= today_iso]
+    skipped = len(new_events) - len(notify_events)
+    if skipped:
+        print(f"開催日が本日より前のため通知から除外: {skipped}件")
+
+    recommendations = generate_recommendations(notify_events)
+    for e in notify_events:
         e["recommendation"] = recommendations.get(e["url"], "")
 
     existing = prune(existing, today)
     save_events(existing)
 
-    notify_new_events(new_events, CALENDAR_URL)
+    notify_new_events(notify_events, CALENDAR_URL)
 
 
 if __name__ == "__main__":

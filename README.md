@@ -10,7 +10,7 @@
 - タイトルから開催日をベストエフォートで推定(`src/date_utils.py`)
 - 新着イベントについて、Claude APIで「おすすめポイント」を1〜2文生成(`src/recommend.py`)
 - これまでに見つけたイベントは `data/events.json`(内部用)/ `docs/events.json`(カレンダーページ用)に蓄積し、重複通知を防止
-- 新着があれば LINE Messaging API の「ブロードキャスト配信」でカード形式(Flex Message)で通知
+- 新着のうち、開催日が通知日以降(または開催日不明)のものだけを LINE Messaging API の「ブロードキャスト配信」でカード形式(Flex Message)で通知
 - GitHub Pages(`docs/`フォルダ)でカレンダー形式の一覧ページを公開
 - GitHub Actions が毎週水曜 7:30(JST) に自動実行(PCを起動しておく必要なし)
 
