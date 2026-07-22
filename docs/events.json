@@ -1,24 +1,6 @@
 {
   "events": [
     {
-      "title": "【越谷市】屋内ダイビング施設FlyStation Japanでお得な「花火大会便乗キャンペーン」が開催されます。",
-      "url": "https://koshigaya.goguynet.jp/2026/07/06/flystation/",
-      "published_at": "2026/07/06 21:45",
-      "source": "号外NET 越谷市",
-      "image_url": "https://koshigaya.goguynet.jp/wp-content/uploads/sites/48/2026/07/sub1-1.jpg",
-      "event_date": "2026-07-06",
-      "first_seen": "2026-07-20"
-    },
-    {
-      "title": "【台東区】7月6日（月）7日（火）8日（水）に今年も、入谷朝顔まつり（朝顔市）が開催されます（雨天決行）。",
-      "url": "https://taito.goguynet.jp/2026/07/04/asagao-2/",
-      "published_at": "2026/07/04 14:39",
-      "source": "号外NET 台東区",
-      "image_url": "https://taito.goguynet.jp/wp-content/uploads/sites/235/2026/07/IMG_9215.jpeg",
-      "event_date": "2026-07-06",
-      "first_seen": "2026-07-20"
-    },
-    {
       "title": "【松戸市】親子で気軽に参加できる♪7月9日に「子育てサロン六実っ子」が開催されるようです。",
       "url": "https://matsudo.goguynet.jp/2026/07/09/mutumittkosaron/",
       "published_at": "2026/07/09 06:48",
@@ -26,6 +8,16 @@
       "image_url": "https://matsudo.goguynet.jp/wp-content/uploads/sites/129/2026/07/IMG_7812.jpeg",
       "event_date": "2026-07-09",
       "first_seen": "2026-07-20"
+    },
+    {
+      "title": "【台東区】7月10日（金）より、8月11日（火祝）まで「第75回江戸趣味納涼大会・うえの夏まつり」が上野公園不忍池周辺及び水上音楽堂で開催中です。",
+      "url": "https://taito.goguynet.jp/2026/07/22/summer/",
+      "published_at": "2026/07/22 07:59",
+      "source": "号外NET 台東区",
+      "image_url": "https://taito.goguynet.jp/wp-content/uploads/sites/235/2026/07/IMG_1935.jpeg",
+      "event_date": "2026-07-10",
+      "first_seen": "2026-07-22",
+      "recommendation": ""
     },
     {
       "title": "【足立区】涼しい室内で思いっきり遊ぼう！入場無料の親子イベント「夏の遊び場2026」が区内3会場で開催されます！",
@@ -154,6 +146,16 @@
       "first_seen": "2026-07-20"
     },
     {
+      "title": "【松戸市】千葉県で2番目の規模を誇る阿波踊り！観客も踊れる「にわか連」や初出店のキッチンカーも♪「第27回小金宿まつり」が開催されます",
+      "url": "https://matsudo.goguynet.jp/2026/07/22/post-18800/",
+      "published_at": "2026/07/22 06:48",
+      "source": "号外NET 松戸市",
+      "image_url": "https://matsudo.goguynet.jp/wp-content/uploads/sites/129/2026/07/IMG_8024.jpeg",
+      "event_date": "2026-07-22",
+      "first_seen": "2026-07-22",
+      "recommendation": ""
+    },
+    {
       "title": "【松戸市】六実地区の夏の恒例イベント「納涼盆踊り大会」が7月25日・26日に開催！例年とは開催日が変更されています",
       "url": "https://matsudo.goguynet.jp/2026/07/16/bonodoritaikai-2/",
       "published_at": "2026/07/16 06:48",
@@ -208,6 +210,26 @@
       "first_seen": "2026-07-20"
     },
     {
+      "title": "【荒川区】8月1日（土）、南千住8丁目汐入地区の夏の風物詩、納涼盆踊りが開催されます！今年もスイカの無料配布がありますよ！",
+      "url": "https://arakawa.goguynet.jp/2026/07/21/nouryoubonodori-2/",
+      "published_at": "2026/07/21 08:15",
+      "source": "号外NET 荒川区",
+      "image_url": "https://arakawa.goguynet.jp/wp-content/uploads/sites/105/2026/07/Point-Blur_20260721_065609-1280x960.jpg",
+      "event_date": "2026-08-01",
+      "first_seen": "2026-07-22",
+      "recommendation": ""
+    },
+    {
+      "title": "【三郷市】三郷花火大会2026は全席有料、観覧チケットの三郷市民先行販売は8月24日から",
+      "url": "https://yashion.jp/event/40703/",
+      "published_at": "2026年7月21日(火)",
+      "source": "やしおん(八潮市公式)",
+      "image_url": "https://yashion.jp/contents/uploads/2026/07/A4_chirashi_tate_OL-2-300x273.jpg",
+      "event_date": "2026-08-24",
+      "first_seen": "2026-07-22",
+      "recommendation": ""
+    },
+    {
       "title": "【三郷市】今年も大盛況！「MISATO HANABI ga NIGHT 2024(三郷花火大会)」が10月5日(土)、市営グラウンド(江戸川運動公園)にて、小雨ながらも無事に開催されました！",
       "url": "https://misato-yashio.goguynet.jp/2024/10/06/misatohanabi-2/",
       "published_at": "2024/10/06 02:05",
@@ -244,5 +266,5 @@
       "first_seen": "2026-07-20"
     }
   ],
-  "generated_at": "2026-07-20"
+  "generated_at": "2026-07-22"
 }
