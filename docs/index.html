@@ -35,67 +35,99 @@
     background: var(--bg);
     color: var(--text);
     padding: 16px;
+    max-width: 600px;
+    margin-inline: auto;
   }
   h1 { font-size: 1.3rem; margin: 0 0 4px; }
-  .sub { color: var(--muted); font-size: 0.85rem; margin-bottom: 16px; }
+  .sub { color: var(--muted); font-size: 0.85rem; margin-bottom: 14px; }
+
+  .view-toggle { display: flex; gap: 8px; margin-bottom: 16px; }
+  .view-toggle button {
+    flex: 1; background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 10px; padding: 10px; font-size: 0.95rem; cursor: pointer;
+  }
+  .view-toggle button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+  .date-heading {
+    font-size: 0.9rem; margin: 18px 0 8px; padding-bottom: 4px;
+    border-bottom: 1px solid var(--border); color: var(--accent);
+  }
+  .date-heading:first-of-type { margin-top: 0; }
+
+  .card {
+    display: flex; gap: 10px; background: var(--card); border: 1px solid var(--border);
+    border-radius: 10px; padding: 10px; margin-bottom: 8px; text-decoration: none; color: var(--text);
+  }
+  .card img { width: 84px; height: 60px; object-fit: cover; border-radius: 6px; flex-shrink: 0; }
+  .card .meta { color: var(--muted); font-size: 0.75rem; }
+  .card .title { font-weight: bold; font-size: 0.92rem; line-height: 1.35; }
+  .card .rec { font-size: 0.8rem; color: var(--text); margin-top: 4px; }
+  .empty { color: var(--muted); padding: 20px 0; text-align: center; }
+
   .nav {
     display: flex; align-items: center; justify-content: space-between;
     margin-bottom: 10px;
   }
   .nav button {
     background: var(--card); color: var(--text); border: 1px solid var(--border);
-    border-radius: 8px; padding: 8px 14px; font-size: 1rem; cursor: pointer;
+    border-radius: 8px; padding: 8px 12px; font-size: 0.95rem; cursor: pointer;
   }
-  .nav .month-label { font-weight: bold; font-size: 1.1rem; }
-  table.calendar { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  .nav .month-label { font-weight: bold; font-size: 1.05rem; }
+  .calendar-scroll { overflow-x: auto; }
+  table.calendar { width: 100%; min-width: 320px; border-collapse: collapse; table-layout: fixed; }
   .calendar th {
-    font-size: 0.75rem; color: var(--muted); font-weight: normal; padding: 4px 0;
+    font-size: 0.7rem; color: var(--muted); font-weight: normal; padding: 4px 0;
   }
   .calendar td {
-    vertical-align: top; border: 1px solid var(--border); height: 92px;
-    padding: 4px; font-size: 0.75rem; overflow: hidden;
+    vertical-align: top; border: 1px solid var(--border); height: 80px;
+    padding: 3px; font-size: 0.68rem; overflow: hidden;
   }
   .calendar td.other-month { opacity: 0.35; }
   .calendar td.today { background: var(--today-bg); }
   .day-num { font-weight: bold; margin-bottom: 2px; }
   .chip {
     display: block; background: var(--accent-bg); color: var(--text);
-    border-radius: 5px; padding: 2px 4px; margin-bottom: 2px;
+    border-radius: 5px; padding: 2px 3px; margin-bottom: 2px;
     text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
   .chip:hover { outline: 1px solid var(--accent); }
-  .more { color: var(--muted); font-size: 0.7rem; }
+  .more { color: var(--muted); font-size: 0.65rem; }
+
   section.unscheduled { margin-top: 24px; }
   section.unscheduled h2 { font-size: 1rem; }
-  .card {
-    display: flex; gap: 10px; background: var(--card); border: 1px solid var(--border);
-    border-radius: 10px; padding: 10px; margin-bottom: 8px; text-decoration: none; color: var(--text);
-  }
-  .card img { width: 72px; height: 48px; object-fit: cover; border-radius: 6px; flex-shrink: 0; }
-  .card .meta { color: var(--muted); font-size: 0.75rem; }
-  .card .title { font-weight: bold; font-size: 0.9rem; }
-  .card .rec { font-size: 0.8rem; color: var(--text); margin-top: 4px; }
-  .empty { color: var(--muted); padding: 20px 0; text-align: center; }
 </style>
 </head>
 <body>
   <h1>やしお子供向けイベントカレンダー</h1>
   <div class="sub" id="generated"></div>
 
-  <div class="nav">
-    <button id="prevBtn">◀ 前の月</button>
-    <div class="month-label" id="monthLabel"></div>
-    <button id="nextBtn">次の月 ▶</button>
+  <div class="view-toggle">
+    <button id="listViewBtn">📋 リスト表示</button>
+    <button id="calViewBtn">📅 カレンダー表示</button>
   </div>
-  <table class="calendar">
-    <thead><tr id="weekdayRow"></tr></thead>
-    <tbody id="calendarBody"></tbody>
-  </table>
 
-  <section class="unscheduled">
-    <h2>日付未定・その他の新着</h2>
-    <div id="unscheduledList"></div>
-  </section>
+  <div id="listView">
+    <div id="listBody"></div>
+  </div>
+
+  <div id="calView" style="display:none">
+    <div class="nav">
+      <button id="prevBtn">◀ 前の月</button>
+      <div class="month-label" id="monthLabel"></div>
+      <button id="nextBtn">次の月 ▶</button>
+    </div>
+    <div class="calendar-scroll">
+      <table class="calendar">
+        <thead><tr id="weekdayRow"></tr></thead>
+        <tbody id="calendarBody"></tbody>
+      </table>
+    </div>
+
+    <section class="unscheduled">
+      <h2>日付未定・その他の新着</h2>
+      <div id="unscheduledList"></div>
+    </section>
+  </div>
 
 <script>
 const WEEKDAYS = ["日", "月", "火", "水", "木", "金", "土"];
@@ -107,7 +139,51 @@ function toDate(iso) {
   return new Date(y, m - 1, d);
 }
 
-function render() {
+function eventCardHtml(e) {
+  const rec = e.recommendation ? `<div class="rec">💡 ${e.recommendation}</div>` : "";
+  const meta = e.published_at ? `${e.source} ・ ${e.published_at}` : e.source;
+  return `<a class="card" href="${e.url}" target="_blank">
+    <img src="${e.image_url || ''}" onerror="this.style.display='none'">
+    <div>
+      <div class="title">${e.title}</div>
+      <div class="meta">${meta}</div>
+      ${rec}
+    </div>
+  </a>`;
+}
+
+function renderList() {
+  const todayStr = new Date().toISOString().slice(0, 10);
+  const upcoming = events
+    .filter(e => e.event_date && e.event_date >= todayStr)
+    .sort((a, b) => a.event_date.localeCompare(b.event_date));
+  const undated = events.filter(e => !e.event_date);
+
+  const groups = [];
+  let currentDate = null;
+  for (const e of upcoming) {
+    if (e.event_date !== currentDate) {
+      currentDate = e.event_date;
+      groups.push({ date: currentDate, items: [] });
+    }
+    groups[groups.length - 1].items.push(e);
+  }
+
+  let html = groups.map(g => {
+    const d = toDate(g.date);
+    const label = `${d.getMonth() + 1}月${d.getDate()}日(${WEEKDAYS[d.getDay()]})`;
+    return `<h2 class="date-heading">${label}</h2>` + g.items.map(eventCardHtml).join("");
+  }).join("");
+
+  if (undated.length > 0) {
+    html += `<h2 class="date-heading">日付未定</h2>` + undated.map(eventCardHtml).join("");
+  }
+
+  document.getElementById("listBody").innerHTML =
+    html || `<div class="empty">今後のイベントはまだ見つかっていません</div>`;
+}
+
+function renderCalendar() {
   document.getElementById("monthLabel").textContent = `${viewYear}年${viewMonth + 1}月`;
 
   const weekdayRow = document.getElementById("weekdayRow");
@@ -164,28 +240,28 @@ function render() {
   const unscheduled = events.filter(e => !e.event_date)
     .sort((a, b) => (b.published_at || "").localeCompare(a.published_at || ""));
   const list = document.getElementById("unscheduledList");
-  if (unscheduled.length === 0) {
-    list.innerHTML = `<div class="empty">なし</div>`;
-  } else {
-    list.innerHTML = unscheduled.map(e => `
-      <a class="card" href="${e.url}" target="_blank">
-        <img src="${e.image_url || ''}" onerror="this.style.display='none'">
-        <div>
-          <div class="title">${e.title}</div>
-          <div class="meta">${e.source} ・ ${e.published_at || ""}</div>
-          ${e.recommendation ? `<div class="rec">💡 ${e.recommendation}</div>` : ""}
-        </div>
-      </a>`).join("");
-  }
+  list.innerHTML = unscheduled.length === 0
+    ? `<div class="empty">なし</div>`
+    : unscheduled.map(eventCardHtml).join("");
 }
+
+function showView(which) {
+  document.getElementById("listView").style.display = which === "list" ? "block" : "none";
+  document.getElementById("calView").style.display = which === "cal" ? "block" : "none";
+  document.getElementById("listViewBtn").classList.toggle("active", which === "list");
+  document.getElementById("calViewBtn").classList.toggle("active", which === "cal");
+}
+
+document.getElementById("listViewBtn").onclick = () => showView("list");
+document.getElementById("calViewBtn").onclick = () => showView("cal");
 
 document.getElementById("prevBtn").onclick = () => {
   viewMonth--; if (viewMonth < 0) { viewMonth = 11; viewYear--; }
-  render();
+  renderCalendar();
 };
 document.getElementById("nextBtn").onclick = () => {
   viewMonth++; if (viewMonth > 11) { viewMonth = 0; viewYear++; }
-  render();
+  renderCalendar();
 };
 
 fetch("./events.json?_=" + Date.now())
@@ -196,11 +272,12 @@ fetch("./events.json?_=" + Date.now())
     const now = new Date();
     viewYear = now.getFullYear();
     viewMonth = now.getMonth();
-    render();
+    renderList();
+    renderCalendar();
+    showView("list");
   })
   .catch(err => {
-    document.getElementById("calendarBody").innerHTML = "";
-    document.getElementById("unscheduledList").innerHTML = `<div class="empty">データの読み込みに失敗しました</div>`;
+    document.getElementById("listBody").innerHTML = `<div class="empty">データの読み込みに失敗しました</div>`;
     console.error(err);
   });
 </script>
