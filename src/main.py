@@ -18,11 +18,11 @@ def main() -> None:
     scraped = collect_events(SOURCES)
     print(f"取得件数: {len(scraped)}")
 
-    kid_events = filter_events(scraped)
-    print(f"子供向けフィルタ後: {len(kid_events)}")
+    reportable_events = filter_events(scraped)
+    print(f"報告対象フィルタ後: {len(reportable_events)}")
 
     new_events = []
-    for e in kid_events:
+    for e in reportable_events:
         if e["url"] in existing:
             continue
         event_date = extract_event_date(e["title"], today) or parse_published_date(e["published_at"], today)

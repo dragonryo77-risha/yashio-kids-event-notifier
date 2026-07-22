@@ -5,8 +5,9 @@
 
 ## 仕組み
 
-- `src/sources.py` に登録したサイトを毎週1回スクレイピング
-- `src/filters.py` のキーワードで子供・ファミリー向けらしいものを抽出
+- `src/sources.py` に登録したサイトを毎週1回スクレイピング(各サイトの「イベント」カテゴリのみ)
+- `src/filters.py` で明らかに対象外なもの(求人・トラブル系など)だけを除外し、子供向けに限らず
+  家族で楽しめそうなものや珍しいイベントも幅広く報告対象にする
 - タイトルから開催日をベストエフォートで推定(`src/date_utils.py`)
 - 新着イベントについて、Claude APIで「おすすめポイント」を1〜2文生成(`src/recommend.py`)
 - これまでに見つけたイベントは `data/events.json`(内部用)/ `docs/events.json`(カレンダーページ用)に蓄積し、重複通知を防止
@@ -81,7 +82,7 @@ yashio-kids-event-notifier/
 │   ├── main.py                     全体の処理の流れをまとめた起点ファイル(ここから実行される)
 │   ├── sources.py                  巡回対象サイトの一覧(エリアを増やすときはここに追記)
 │   ├── scraper.py                  各サイトのHTMLからイベント情報を抜き出す処理
-│   ├── filters.py                  子供・ファミリー向けイベントかどうかを判定するキーワード
+│   ├── filters.py                  報告対象外(求人・トラブル系など)を除外するキーワード
 │   ├── date_utils.py               タイトルから開催日を推定する処理
 │   ├── recommend.py                Claude APIで「おすすめポイント」文章を生成する処理
 │   ├── notifier.py                 LINEにカード形式(Flex Message)で通知を送る処理
@@ -101,7 +102,7 @@ yashio-kids-event-notifier/
 ## カスタマイズ
 
 - **対象エリアを増やす**: `src/sources.py` に追記(号外NET系は `https://<エリア>.goguynet.jp/category/cat_event/` の形式が多くのエリアで使えます)
-- **キーワードを調整する**: `src/filters.py` の `KID_KEYWORDS` / `FAMILY_FRIENDLY_EVENT_KEYWORDS` / `NG_KEYWORDS` を編集
+- **除外キーワードを調整する**: `src/filters.py` の `NG_KEYWORDS` を編集(ここに追加した語を含むタイトルは報告対象外になります)
 - **通知時刻**: `.github/workflows/notify.yml` の `cron`
 
 ## 注意点

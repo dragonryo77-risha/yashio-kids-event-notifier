@@ -1,37 +1,25 @@
-"""子供(未就学児)向け・ファミリー向けらしいイベントかどうかをタイトルから判定する。
+"""報告対象のイベントかどうかをタイトルから判定する。
 
-完璧な精度は出せないので「見逃しを減らす」方向に倒し、
-明らかに対象外なものだけ除外する設計にしている。
+対象サイトはもともと「イベント」カテゴリのページのみを巡回しているため、
+掲載されている記事の大半は何らかのお出かけ先・催し物である。
+子供向けに限定せず、家族で楽しめそうなものや珍しいイベントも幅広く拾い、
+NG_KEYWORDSに該当する明らかに対象外なもの(業者向け・求人・トラブル系など)だけを除外する。
+子供(2歳前後)にとっての適性は、通知時にClaude APIが生成する「おすすめポイント」で判断できるようにしている。
 """
 
-# タイトルにこれらの語が含まれていれば子供・ファミリー向けの可能性が高い
-KID_KEYWORDS = [
-    "子ども", "子供", "こども", "キッズ", "親子", "ファミリー", "赤ちゃん", "ベビー",
-    "幼児", "児童", "保育園", "幼稚園", "おやこ", "0歳", "1歳", "2歳", "3歳",
-    "未就学", "プラネタリウム", "動物園", "水族館", "工作教室", "縁日",
-]
-
-# 地域の一般的なお祭り・季節イベントも未就学児連れで行きやすいので含める
-FAMILY_FRIENDLY_EVENT_KEYWORDS = [
-    "夏祭り", "夏まつり", "盆踊り", "花火大会", "フリーマーケット", "マルシェ",
-    "まつり", "祭り", "縁日", "運動会", "収穫祭", "産業まつり",
-]
-
-# タイトルにこれらが含まれる場合は対象外(大人向け・業者向けなど)とみなす
+# タイトルにこれらが含まれる場合は対象外とみなす(お出かけイベントとして報告する意味がないもの)
 NG_KEYWORDS = [
     "婚活", "出会い", "セミナー(法人", "求人説明会", "就職説明会", "投資セミナー",
+    "求人", "面接会", "内定", "採用説明会",
+    "訃報", "逮捕", "事件", "火災", "事故",
+    "選挙", "議会", "議員",
+    "詐欺", "闇バイト", "特殊詐欺",
 ]
 
 
-def is_kid_friendly(title: str) -> bool:
-    if any(ng in title for ng in NG_KEYWORDS):
-        return False
-    if any(k in title for k in KID_KEYWORDS):
-        return True
-    if any(k in title for k in FAMILY_FRIENDLY_EVENT_KEYWORDS):
-        return True
-    return False
+def is_worth_reporting(title: str) -> bool:
+    return not any(ng in title for ng in NG_KEYWORDS)
 
 
 def filter_events(events: list[dict]) -> list[dict]:
-    return [e for e in events if is_kid_friendly(e["title"])]
+    return [e for e in events if is_worth_reporting(e["title"])]
