@@ -3,7 +3,7 @@ from datetime import date
 from date_utils import extract_event_date, parse_published_date
 from filters import filter_events
 from notifier import notify_new_events
-from recommend import generate_recommendations
+from recommend import analyze_events
 from scraper import collect_events
 from sources import SOURCES
 from store import load_events, prune, save_events
@@ -25,22 +25,29 @@ def main() -> None:
     for e in reportable_events:
         if e["url"] in existing:
             continue
-        event_date = extract_event_date(e["title"], today) or parse_published_date(e["published_at"], today)
-        e["event_date"] = event_date
+        # 正規表現による抽出はあくまで参考値。誤りやすい(チケット販売日等を誤検出)ため、
+        # 後段でClaudeに文脈込みで判定させ、取れればその結果で上書きする。
+        e["event_date"] = extract_event_date(e["title"], today) or parse_published_date(e["published_at"], today)
         e["first_seen"] = today.isoformat()
         new_events.append(e)
         existing[e["url"]] = e
     print(f"未通知の新着: {len(new_events)}")
+
+    analysis = analyze_events(new_events, today)
+    for e in new_events:
+        result = analysis.get(e["url"])
+        if result:
+            if result["event_date"]:
+                e["event_date"] = result["event_date"]
+            e["recommendation"] = result["recommendation"]
+        else:
+            e["recommendation"] = ""
 
     today_iso = today.isoformat()
     notify_events = [e for e in new_events if not e["event_date"] or e["event_date"] >= today_iso]
     skipped = len(new_events) - len(notify_events)
     if skipped:
         print(f"開催日が本日より前のため通知から除外: {skipped}件")
-
-    recommendations = generate_recommendations(notify_events)
-    for e in notify_events:
-        e["recommendation"] = recommendations.get(e["url"], "")
 
     existing = prune(existing, today)
     save_events(existing)
