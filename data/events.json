@@ -1,743 +1,6 @@
 {
   "events": [
     {
-      "title": "八潮市で「原爆パネル展・平和パネル展」開催　戦争の記憶と平和を次世代へ",
-      "url": "https://yashion.jp/event/41287/",
-      "published_at": "2026年7月29日(水)",
-      "source": "やしおん(八潮市公式)",
-      "image_url": "https://yashion.jp/contents/uploads/2026/07/20260728-3-300x300.jpg",
-      "event_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【松戸市】提灯ややぐらの設営が進行中！「第43回 松戸市高柳町会 夏祭り」の開催準備が始まっています",
-      "url": "https://matsudo.goguynet.jp/2026/07/29/post-18852/",
-      "published_at": "2026/07/29 06:48",
-      "source": "号外NET 松戸市",
-      "image_url": "https://matsudo.goguynet.jp/wp-content/uploads/sites/129/2026/07/IMG_8189.jpeg",
-      "event_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【川口市周辺】丸ごと桃パフェが美味しそう！「Sweets. Stand. パラソル」が7月29日(水)より2周年アニバーサリーフェアを開催するそうです！",
-      "url": "https://kawaguchi.goguynet.jp/2026/07/26/post-52116/",
-      "published_at": "2026/07/26 23:59",
-      "source": "号外NET 川口市",
-      "image_url": "https://kawaguchi.goguynet.jp/wp-content/uploads/sites/51/2026/07/IMG_8614.jpg",
-      "event_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【板橋区】「第67回いたばし花火大会」を生中継！J:COMチャンネル・YouTube・アプリで自宅からも楽しめます",
-      "url": "https://itabashi.goguynet.jp/2026/07/29/itabashi-hanabi-taikai-5/",
-      "published_at": "2026/07/29 09:33",
-      "source": "号外NET 板橋区",
-      "image_url": "https://itabashi.goguynet.jp/wp-content/uploads/sites/110/2026/05/main-1.jpg",
-      "event_date": "2026-07-29",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【江東区】ギャラリーで出会う小さなアート「ラッkeychain展5」へ行ってきました。大人気「SloMood」スクイーズキーホルダーを購入。",
-      "url": "https://koto.goguynet.jp/2026/07/29/lakeychain5/",
-      "published_at": "2026/07/29 22:29",
-      "source": "号外NET 江東区",
-      "image_url": "https://koto.goguynet.jp/wp-content/uploads/sites/112/2026/07/20260728_140411.jpg",
-      "event_date": "2026-07-29",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【墨田区】今年の「すみだ錦糸町河内音頭」は7月29日（水）30日（木）開催です！",
-      "url": "https://sumida.goguynet.jp/2026/07/30/kawachiondo2026/",
-      "published_at": "2026/07/30 08:01",
-      "source": "号外NET 墨田区",
-      "image_url": "https://sumida.goguynet.jp/wp-content/uploads/sites/60/2026/07/IMG_6521.jpeg",
-      "event_date": "2026-07-29",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【練馬区】ふるさと文化館で、「第14回 ねりま手工芸公募展」が開催されます！",
-      "url": "https://nerima.goguynet.jp/2026/07/29/kougei-5/",
-      "published_at": "2026/07/29 23:59",
-      "source": "号外NET 練馬区",
-      "image_url": "https://nerima.goguynet.jp/wp-content/uploads/sites/66/2026/07/20260729_234821.jpg",
-      "event_date": "2026-07-29",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【練馬区】練馬区役所で、毎週月曜から金曜まで「ねりいち」が開催されます！",
-      "url": "https://nerima.goguynet.jp/2026/07/29/neriichi-120/",
-      "published_at": "2026/07/29 23:45",
-      "source": "号外NET 練馬区",
-      "image_url": "https://nerima.goguynet.jp/wp-content/uploads/sites/66/2026/07/20260729_233812.jpg",
-      "event_date": "2026-07-29",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【練馬区】練馬区役所で上田市の物産販売会が開催されます。",
-      "url": "https://nerima.goguynet.jp/2026/07/29/ueda-13/",
-      "published_at": "2026/07/29 21:16",
-      "source": "号外NET 練馬区",
-      "image_url": "https://nerima.goguynet.jp/wp-content/uploads/sites/66/2026/07/20260729_194932.jpg",
-      "event_date": "2026-07-29",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【越谷市】話題の「うるぷくシール」も！たべっ子どうぶつのポップアップストアがレイクタウンに登場",
-      "url": "https://koshigaya.goguynet.jp/2026/07/30/tabekkodoubutsuland/",
-      "published_at": "2026/07/30 22:35",
-      "source": "号外NET 越谷市",
-      "image_url": "https://koshigaya.goguynet.jp/wp-content/uploads/sites/48/2026/07/main-3-1080x960.jpg",
-      "event_date": "2026-07-30",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【荒川区】2026年の夏。新しいことにチャレンジしませんか。8月の「日暮里繊維街ワークショップ in ふらっとにっぽり」のお知らせ。",
-      "url": "https://arakawa.goguynet.jp/2026/07/30/atarashiikotonichalleng/",
-      "published_at": "2026/07/30 08:15",
-      "source": "号外NET 荒川区",
-      "image_url": "https://arakawa.goguynet.jp/wp-content/uploads/sites/105/2026/07/Point-Blur_20260729_120732-1280x960.jpg",
-      "event_date": "2026-07-30",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【練馬区】「アーツ中村橋 2026―わたしとまちの記憶」展が開催されます。",
-      "url": "https://nerima.goguynet.jp/2026/07/30/arts/",
-      "published_at": "2026/07/30 23:46",
-      "source": "号外NET 練馬区",
-      "image_url": "https://nerima.goguynet.jp/wp-content/uploads/sites/66/2026/07/20260730_232240.jpg",
-      "event_date": "2026-07-30",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【練馬区】江古田で「エコダdeウエダ　トウモロコシ即売会」が開催されます！",
-      "url": "https://nerima.goguynet.jp/2026/07/30/ekoda-3/",
-      "published_at": "2026/07/30 22:29",
-      "source": "号外NET 練馬区",
-      "image_url": "https://nerima.goguynet.jp/wp-content/uploads/sites/66/2026/07/20260730_135236.jpg",
-      "event_date": "2026-07-30",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【世田谷区】みんなで楽しく盆踊り！野沢にある龍雲寺にて今年も盆踊り大会が開催されます！",
-      "url": "https://setagaya.goguynet.jp/2026/07/30/ryuunji/",
-      "published_at": "2026/07/30 07:35",
-      "source": "号外NET 世田谷区",
-      "image_url": "https://setagaya.goguynet.jp/wp-content/uploads/sites/145/2026/07/IMG_7486.jpeg",
-      "event_date": "2026-07-30",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【荒川区】毎年、大人気の「日暮里繊維街夏祭り in ふらっとにっぽり」。今年は7月31日（金）と8月1日（土）に開催決定！",
-      "url": "https://arakawa.goguynet.jp/2026/06/22/nipporisenigainatumaturi/",
-      "published_at": "2026/06/22 23:45",
-      "source": "号外NET 荒川区",
-      "image_url": "https://arakawa.goguynet.jp/wp-content/uploads/sites/105/2026/06/Point-Blur_20260622_220637-1280x960.jpg",
-      "event_date": "2026-07-31",
-      "first_seen": "2026-07-20"
-    },
-    {
-      "title": "【杉並区】ウルトラマンファンの方必見！「エスプレッソ・アメリカーノ 杉並公会堂店」では7月31日(金)までの期間限定でウルトラマンシリーズ60周年を記念したコラボカフェが開催中です！",
-      "url": "https://suginami.goguynet.jp/2026/07/06/espresso-americano/",
-      "published_at": "2026/07/06 07:44",
-      "source": "号外NET 杉並区",
-      "image_url": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/07/IMG_6613.jpeg",
-      "event_date": "2026-07-31",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【松戸市】たくさんの笑顔でにぎわった「六実地区 納涼盆踊り大会」へ行ってきました！日曜日は雨のため途中で中止に。",
-      "url": "https://matsudo.goguynet.jp/2026/07/31/post-18857/",
-      "published_at": "2026/07/31 06:48",
-      "source": "号外NET 松戸市",
-      "image_url": "https://matsudo.goguynet.jp/wp-content/uploads/sites/129/2026/07/IMG_8197.jpeg",
-      "event_date": "2026-07-31",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【練馬区】光が丘公園で、「光が丘みらい×夏フェス2026」が開催されます！",
-      "url": "https://nerima.goguynet.jp/2026/07/31/natsufes/",
-      "published_at": "2026/07/31 22:05",
-      "source": "号外NET 練馬区",
-      "image_url": "https://nerima.goguynet.jp/wp-content/uploads/sites/66/2026/07/20260731_152234.jpg",
-      "event_date": "2026-07-31",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【世田谷区】三茶がさまざまなアートに触れ合える農園に？せたがやアートファーム2026が開催されています。",
-      "url": "https://setagaya.goguynet.jp/2026/07/31/artfarm/",
-      "published_at": "2026/07/31 07:35",
-      "source": "号外NET 世田谷区",
-      "image_url": "https://setagaya.goguynet.jp/wp-content/uploads/sites/145/2026/07/IMG_7517.jpeg",
-      "event_date": "2026-07-31",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【江東区】水遊びがテーマの夏祭りが木場公園にやってくる！　「KIBACO キッズウォーターフェス」8月1日・2日の開催です。",
-      "url": "https://koto.goguynet.jp/2026/07/17/kibaco-event_water/",
-      "published_at": "2026/07/17 23:07",
-      "source": "号外NET 江東区",
-      "image_url": "https://koto.goguynet.jp/wp-content/uploads/sites/112/2026/07/arribelle.png",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-20"
-    },
-    {
-      "title": "【荒川区】8月1日（土）・2日（日）、石濱神社納涼大会が開催されます。子どもも大人も石濱神社の夏の夜を楽しもう！",
-      "url": "https://arakawa.goguynet.jp/2026/07/18/nouryoutaikai/",
-      "published_at": "2026/07/18 23:15",
-      "source": "号外NET 荒川区",
-      "image_url": "https://arakawa.goguynet.jp/wp-content/uploads/sites/105/2025/11/20251111_114609.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-20"
-    },
-    {
-      "title": "【荒川区】8月1日（土）、南千住8丁目汐入地区の夏の風物詩、納涼盆踊りが開催されます！今年もスイカの無料配布がありますよ！",
-      "url": "https://arakawa.goguynet.jp/2026/07/21/nouryoubonodori-2/",
-      "published_at": "2026/07/21 08:15",
-      "source": "号外NET 荒川区",
-      "image_url": "https://arakawa.goguynet.jp/wp-content/uploads/sites/105/2026/07/Point-Blur_20260721_065609-1280x960.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-22",
-      "recommendation": ""
-    },
-    {
-      "title": "草加市・谷塚の夏が熱くなる！「第4回やつか納涼フェスタ」8月1日・2日開催",
-      "url": "https://yashion.jp/event/40682/",
-      "published_at": "2026年7月21日(火)",
-      "source": "やしおん(八潮市公式)",
-      "image_url": "https://yashion.jp/contents/uploads/2026/07/20260718-1-300x225.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-22",
-      "recommendation": ""
-    },
-    {
-      "title": "八潮から電車で2駅！商店街がにぎわう「青井の夜会2026」8月1日開催",
-      "url": "https://yashion.jp/event/40577/",
-      "published_at": "2026年7月19日(日)",
-      "source": "やしおん(八潮市公式)",
-      "image_url": "https://yashion.jp/contents/uploads/2026/07/66636f1a0477821fcd26b3822ab37afc-300x226.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-22",
-      "recommendation": ""
-    },
-    {
-      "title": "【足立区】8月1日は「青井の夜会」へ！バル券で美味しいお酒とお料理のセットはいかがですか？野菜詰め放題やステージで盛り上がろう！",
-      "url": "https://adachi.goguynet.jp/2026/07/21/aoi-no-yakai/",
-      "published_at": "2026/07/21 16:00",
-      "source": "号外NET 足立区",
-      "image_url": "https://adachi.goguynet.jp/wp-content/uploads/sites/133/2026/07/71e85e319577e5d95a05264ae4bdb2e0.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-22",
-      "recommendation": ""
-    },
-    {
-      "title": "【荒川区】8月1日（土）、尾久八幡神社例大祭が行われます。2026年は２年に一度の神輿担ぎがありますよ！",
-      "url": "https://arakawa.goguynet.jp/2026/06/28/oguyahatajinjyareidaisai/",
-      "published_at": "2026/06/28 22:45",
-      "source": "号外NET 荒川区",
-      "image_url": "https://arakawa.goguynet.jp/wp-content/uploads/sites/105/2026/06/20260614_145235-1.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-22",
-      "recommendation": ""
-    },
-    {
-      "title": "REAL AKIBA BOYZ「ROOTS」がレイクタウンに登場！8月1日に無料ライブ",
-      "url": "https://yashion.jp/event/41088/",
-      "published_at": "2026年7月28日(火)",
-      "source": "やしおん(八潮市公式)",
-      "image_url": "https://yashion.jp/contents/uploads/2026/07/20260726-1-300x223.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【柏市】「手賀沼花火大会2026」が8月1日に開催！会場マップ・交通規制を事前にチェックしてお出かけを",
-      "url": "https://kashiwa.goguynet.jp/2026/07/29/teganumahanabi2026/",
-      "published_at": "2026/07/29 07:01",
-      "source": "号外NET 柏市",
-      "image_url": "https://kashiwa.goguynet.jp/wp-content/uploads/sites/80/2026/07/teganumahabnabitaikai1.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【春日部市】ララガーデン春日部で「こども縁日」が8月1日より開催！ポスターから漂う楽しそうな夏祭り感に注目です！",
-      "url": "https://kasukabe.goguynet.jp/2026/07/28/lala_kodomoennichi/",
-      "published_at": "2026/07/28 20:05",
-      "source": "号外NET 春日部市",
-      "image_url": "https://kasukabe.goguynet.jp/wp-content/uploads/sites/33/2026/07/lala_kodomoennichi.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【春日部市】8月1日は体験コーナーがいっぱい！「第3回 夏のぽぽらであそぼう！」開催",
-      "url": "https://kasukabe.goguynet.jp/2026/07/28/popora/",
-      "published_at": "2026/07/28 07:05",
-      "source": "号外NET 春日部市",
-      "image_url": "https://kasukabe.goguynet.jp/wp-content/uploads/sites/33/2024/05/IMG_3220.jpeg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【千葉市中央区】秘密基地のような森で乾杯♪ 椿森コムナで期間限定「ビアガーデン」が8月1日から開催されます！",
-      "url": "https://chiba.goguynet.jp/2026/07/29/tsubakimorikomuna-3/",
-      "published_at": "2026/07/29 06:37",
-      "source": "号外NET 千葉市",
-      "image_url": "https://chiba.goguynet.jp/wp-content/uploads/sites/282/2026/03/IMG_6685.jpeg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【千葉市中央区】花火大会の夜だけの特別営業！千葉ポートタワーで「一夜限りの夜カフェ」が8月1日に開催",
-      "url": "https://chiba.goguynet.jp/2026/07/26/chibaporttower-17/",
-      "published_at": "2026/07/26 06:37",
-      "source": "号外NET 千葉市",
-      "image_url": "https://chiba.goguynet.jp/wp-content/uploads/sites/282/2026/07/IMG_8507.jpeg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【千葉市中央区】新シーズン到来！「第31回ちばぎんカップ」8月1日にフクアリで開催！ジェフ千葉と柏レイソルが激突します",
-      "url": "https://chiba.goguynet.jp/2026/07/17/fukudadenshiarena-7/",
-      "published_at": "2026/07/17 06:37",
-      "source": "号外NET 千葉市",
-      "image_url": "https://chiba.goguynet.jp/wp-content/uploads/sites/282/2026/07/IMG_8693.jpeg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【台東区】8月1日（土）～9月30日（水）を開催期間として「台東区をめぐる商店街まちゼミ」（受講料無料）が開催されます。",
-      "url": "https://taito.goguynet.jp/2026/07/29/machizemi/",
-      "published_at": "2026/07/29 07:59",
-      "source": "号外NET 台東区",
-      "image_url": "https://taito.goguynet.jp/wp-content/uploads/sites/235/2026/07/IMG_2592.jpeg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【台東区】現在開催中の「うえの夏まつり」では、8月1日（土）に「UENO JAZZ INN’26」も開演予定です♪",
-      "url": "https://taito.goguynet.jp/2026/07/23/jazz/",
-      "published_at": "2026/07/23 09:59",
-      "source": "号外NET 台東区",
-      "image_url": "https://taito.goguynet.jp/wp-content/uploads/sites/235/2026/07/IMG_2408.jpeg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【板橋区】開催まであと1か月！第67回いたばし花火大会は8月1日開催。約15,000発の花火やポケモン花火など見どころ満載！",
-      "url": "https://itabashi.goguynet.jp/2026/07/11/itabashi-hanabi-taikai-4/",
-      "published_at": "2026/07/11 10:33",
-      "source": "号外NET 板橋区",
-      "image_url": "https://itabashi.goguynet.jp/wp-content/uploads/sites/110/2026/07/main-3.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【杉並区】富士見ヶ丘商店街が夏祭り一色に！「第2回 富士見ヶ丘大祭り」が8月1日(土)と2日(日)の2日間で開催されますよ。",
-      "url": "https://suginami.goguynet.jp/2026/07/29/fujimingaoka-fes-2026/",
-      "published_at": "2026/07/29 07:44",
-      "source": "号外NET 杉並区",
-      "image_url": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/07/IMG_7131.jpeg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【杉並区】街を歩いて新発見！？東高円寺で回遊イベント「HIGAKO とことこ」が8月1日(土)に開催されます！",
-      "url": "https://suginami.goguynet.jp/2026/07/28/higakotokotoko2026/",
-      "published_at": "2026/07/28 07:44",
-      "source": "号外NET 杉並区",
-      "image_url": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/07/IMG_7255.jpeg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【杉並区】夏休みの自由研究にもぴったり！ドローンを体験できる「第15回ドロパッ！」が8月1日(土)に高架下空き倉庫で開催されます！",
-      "url": "https://suginami.goguynet.jp/2026/07/27/doropa-15th/",
-      "published_at": "2026/07/27 07:44",
-      "source": "号外NET 杉並区",
-      "image_url": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/07/IMG_6856-1280x960.jpeg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "八潮から羽ばたく若き音楽家を募集！第20回八潮市新人オーディション開催へ",
-      "url": "https://yashion.jp/event/41325/",
-      "published_at": "2026年8月1日(土)",
-      "source": "やしおん(八潮市公式)",
-      "image_url": "https://yashion.jp/contents/uploads/2026/07/20260729-2-300x300.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "八潮市が小学生親子向け無料バスツアーを追加募集してます　昭和館と科学技術館",
-      "url": "https://yashion.jp/event/41328/",
-      "published_at": "2026年8月1日(土)",
-      "source": "やしおん(八潮市公式)",
-      "image_url": "https://yashion.jp/contents/uploads/2026/07/20260729-3-300x300.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【草加市】8月1日(土)、2日(日)はお祭り三昧！草加市内、草加市周辺で開催されるお祭り・花火大会をまるっとご紹介します！",
-      "url": "https://soka.goguynet.jp/2026/08/01/2026-8-1-2omatsuri/",
-      "published_at": "2026/08/01 01:31",
-      "source": "号外NET 草加市",
-      "image_url": "https://soka.goguynet.jp/wp-content/uploads/sites/49/2025/07/IMG_0933.jpeg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【越谷市】試食やプレゼントも大盤振る舞い！「会津ものづくりフェスタ2026」が開催中です",
-      "url": "https://koshigaya.goguynet.jp/2026/08/01/aidumonodukurifes2026/",
-      "published_at": "2026/08/01 18:00",
-      "source": "号外NET 越谷市",
-      "image_url": "https://koshigaya.goguynet.jp/wp-content/uploads/sites/48/2026/08/IMG_0010.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【越谷市】「マジやばくね」『小林さんちのメイドラゴン』×越谷市の田んぼアートが間もなく見頃を迎えます！",
-      "url": "https://koshigaya.goguynet.jp/2026/08/01/tanboart2026/",
-      "published_at": "2026/08/01 14:00",
-      "source": "号外NET 越谷市",
-      "image_url": "https://koshigaya.goguynet.jp/wp-content/uploads/sites/48/2026/08/IMG_9942.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【松戸市】8月1日は「夏祭りin五香南」！一文字公園で盆踊りや屋台村、キッチンカーが楽しめます。",
-      "url": "https://matsudo.goguynet.jp/2026/07/30/post-18855/",
-      "published_at": "2026/07/30 06:48",
-      "source": "号外NET 松戸市",
-      "image_url": "https://matsudo.goguynet.jp/wp-content/uploads/sites/129/2026/07/IMG_8086.jpeg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【柏市】8月1日手賀沼花火大会当日は、市内3つの商業施設で屋上を開放！観覧条件をまとめました。",
-      "url": "https://kashiwa.goguynet.jp/2026/07/31/teganumahanabitaikaiokujokaiho26/",
-      "published_at": "2026/07/31 18:52",
-      "source": "号外NET 柏市",
-      "image_url": "https://kashiwa.goguynet.jp/wp-content/uploads/sites/80/2026/07/teganumahanabitaikai6.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【川口市】今年はどこから花火を観る？8月1日(土)に開催される戸田橋花火大会を観賞できる施設をまとめてみました！！",
-      "url": "https://kawaguchi.goguynet.jp/2026/07/31/post-52144/",
-      "published_at": "2026/07/31 18:02",
-      "source": "号外NET 川口市",
-      "image_url": "https://kawaguchi.goguynet.jp/wp-content/uploads/sites/51/2019/08/21ac41db0fa537fafa779f01b8ccc158_s.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【足立区】夏休みの思い出に！アリオ西新井で、たまごパックを使った「かき氷キーホルダー」作りが、明日8月1日に開催されます！",
-      "url": "https://adachi.goguynet.jp/2026/07/31/ario-nishiarai/",
-      "published_at": "2026/07/31 07:32",
-      "source": "号外NET 足立区",
-      "image_url": "https://adachi.goguynet.jp/wp-content/uploads/sites/133/2026/07/IMG_0079.jpeg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【台東区】8月1日（土）2日（日）に千束1丁目の金竜小学校（校庭）で「盆踊り大会」が開催されます。なお、同日には「めぐりん」の迂回運行も予定されていますのでご留意ください。",
-      "url": "https://taito.goguynet.jp/2026/07/31/bon/",
-      "published_at": "2026/07/31 16:59",
-      "source": "号外NET 台東区",
-      "image_url": "https://taito.goguynet.jp/wp-content/uploads/sites/235/2026/07/IMG_2831.jpeg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【台東区】谷中ぎんざ（谷中銀座商店街）では、8月1日（土）2日（日）に「谷中ひゃっこい祭り2026」が開催されます。",
-      "url": "https://taito.goguynet.jp/2026/07/30/yanaka-3/",
-      "published_at": "2026/07/30 19:49",
-      "source": "号外NET 台東区",
-      "image_url": "https://taito.goguynet.jp/wp-content/uploads/sites/235/2026/07/IMG_2795.jpeg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【江東区】8月1日から！　大人気「名作絵本のクッキー缶セレクション by Cake.jp」が、有明ガーデンで初開催",
-      "url": "https://koto.goguynet.jp/2026/08/02/cakejp_ariake/",
-      "published_at": "2026/08/02 08:49",
-      "source": "号外NET 江東区",
-      "image_url": "https://koto.goguynet.jp/wp-content/uploads/sites/112/2026/08/main.png",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【荒川区】貸切都電で楽しく歌って夏休みの思い出づくりしませんか。「こどものうたチャンネル」夏休みスペシャル ミニコンサート2026！",
-      "url": "https://arakawa.goguynet.jp/2026/08/01/kodomoutachannel/",
-      "published_at": "2026/08/01 22:35",
-      "source": "号外NET 荒川区",
-      "image_url": "https://arakawa.goguynet.jp/wp-content/uploads/sites/105/2026/08/IMG_1204-1083x960.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【江戸川区】8/1(土)江戸川区花火大会の最寄「篠崎駅」周辺の当日の案内まとめ",
-      "url": "https://edogawa.goguynet.jp/2026/07/31/edogawahanabi/",
-      "published_at": "2026/07/31 16:00",
-      "source": "号外NET 江戸川区",
-      "image_url": "https://edogawa.goguynet.jp/wp-content/uploads/sites/63/2026/07/IMG_9926.jpeg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【板橋区】8月1日（土）「第67回いたばし花火大会」が開催！有料席エリア付近からの花火をレポ",
-      "url": "https://itabashi.goguynet.jp/2026/08/02/itabashi-hanabi-taikai-6/",
-      "published_at": "2026/08/02 08:23",
-      "source": "号外NET 板橋区",
-      "image_url": "https://itabashi.goguynet.jp/wp-content/uploads/sites/110/2026/08/PXL_20260801_112729811.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【太田市】新田荘歴史資料館にて、埴輪トレーディングカード「HANI-トレカ」登場！8月1日から配布開始！",
-      "url": "https://ota.goguynet.jp/2026/08/01/hanitoreca/",
-      "published_at": "2026/08/01 06:24",
-      "source": "号外NET 大田区",
-      "image_url": "https://ota.goguynet.jp/wp-content/uploads/sites/137/2026/07/23696666_s.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【太田市】8月1日（土）・2日（日）限定！イオンモール太田に「サンリオカフェワゴン」が登場！",
-      "url": "https://ota.goguynet.jp/2026/07/30/sanriocafewagon/",
-      "published_at": "2026/07/30 06:24",
-      "source": "号外NET 大田区",
-      "image_url": "https://ota.goguynet.jp/wp-content/uploads/sites/137/2026/07/20260727_165708609.jpg",
-      "event_date": "2026-08-01",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "CIRRAがイオンレイクタウンに登場！2nd EP「Water」発売記念イベントを8月2日開催",
-      "url": "https://yashion.jp/event/40846/",
-      "published_at": "2026年7月25日(土)",
-      "source": "やしおん(八潮市公式)",
-      "image_url": "https://yashion.jp/contents/uploads/2026/07/main_kv_pc_2606-300x200.jpg",
-      "event_date": "2026-08-02",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【越谷市】ドナルドがやってくる！マクドナルド越谷南町店で8月2日にイベントが開催されます",
-      "url": "https://koshigaya.goguynet.jp/2026/07/29/mcdonalds-koshigayaminamicho/",
-      "published_at": "2026/07/29 13:30",
-      "source": "号外NET 越谷市",
-      "image_url": "https://koshigaya.goguynet.jp/wp-content/uploads/sites/48/2026/07/IMG_9780.jpg",
-      "event_date": "2026-08-02",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【太田市】8月2日（日）、ぐんまこどもの国児童会館にて「熟睡プラ寝たリウム　大人のためのお昼寝プラネ～ハワイの星空～」が開催されます！",
-      "url": "https://ota.goguynet.jp/2026/07/06/jyukusuipuranetariumu/",
-      "published_at": "2026/07/06 06:24",
-      "source": "号外NET 大田区",
-      "image_url": "https://ota.goguynet.jp/wp-content/uploads/sites/137/2026/07/3022871_s.jpg",
-      "event_date": "2026-08-02",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "八潮・伊草で夏の夕涼み「第2回 伊草マルシェ」開催へ　灯ろう流しも同時開催",
-      "url": "https://yashion.jp/event/41374/",
-      "published_at": "2026年8月2日(日)",
-      "source": "やしおん(八潮市公式)",
-      "image_url": "https://yashion.jp/contents/uploads/2026/07/IMG_5061-2025-08-16T17_18_06.178-1-300x225.jpg",
-      "event_date": "2026-08-02",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "“ホーリーボイス”花耶がレイクタウンへ！8月2日に観覧無料ライブ",
-      "url": "https://yashion.jp/event/41347/",
-      "published_at": "2026年7月31日(金)",
-      "source": "やしおん(八潮市公式)",
-      "image_url": "https://yashion.jp/contents/uploads/2026/07/Wind_kaya_CD_package_H4toriminngu_2600601-300x297.jpg",
-      "event_date": "2026-08-02",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "三郷でかわいい一枚を！8月2日「フォトブースカーニバル」開催 三郷ハウジングステージ",
-      "url": "https://yashion.jp/event/41430/",
-      "published_at": "2026年7月31日(金)",
-      "source": "やしおん(八潮市公式)",
-      "image_url": "https://yashion.jp/contents/uploads/2026/07/c2eb1f13ff76fd87a16be6e4abe2d293-300x200.jpg",
-      "event_date": "2026-08-02",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【越谷市】ご注意ください。イオンレイクタウンで開催予定のイベントの一部中止が発表されています。",
-      "url": "https://koshigaya.goguynet.jp/2026/08/02/raketown-ivent/",
-      "published_at": "2026/08/02 19:20",
-      "source": "号外NET 越谷市",
-      "image_url": "https://koshigaya.goguynet.jp/wp-content/uploads/sites/48/2026/08/3246227_l.jpg",
-      "event_date": "2026-08-02",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【松戸市】地域の夏を彩る「高柳町会 納涼盆踊り大会」に行ってきました！夕暮れの会場は多くの人でにぎわっていました",
-      "url": "https://matsudo.goguynet.jp/2026/08/02/post-18870/",
-      "published_at": "2026/08/02 06:48",
-      "source": "号外NET 松戸市",
-      "image_url": "https://matsudo.goguynet.jp/wp-content/uploads/sites/129/2026/08/IMG_8304.jpeg",
-      "event_date": "2026-08-02",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【川口市】アリオ川口で「埼玉マジLOVE Tシャツ展」が8月2日(日)まで開催中！1日目の様子を紹介します。",
-      "url": "https://kawaguchi.goguynet.jp/2026/08/01/post-52161/",
-      "published_at": "2026/08/01 23:59",
-      "source": "号外NET 川口市",
-      "image_url": "https://kawaguchi.goguynet.jp/wp-content/uploads/sites/51/2026/08/IMG_2899-1.jpg",
-      "event_date": "2026-08-02",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【千葉市美浜区】手話で「ありがとう」が伝わる体験を。イオンモール幕張新都心で親子向けイベント「手話の森マルシェ」が8月2日に開催されます！",
-      "url": "https://chiba.goguynet.jp/2026/07/31/aeonmall-12/",
-      "published_at": "2026/07/31 06:37",
-      "source": "号外NET 千葉市",
-      "image_url": "https://chiba.goguynet.jp/wp-content/uploads/sites/282/2026/01/IMG_5947.jpeg",
-      "event_date": "2026-08-02",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【足立区】夏休みに太鼓でドン！8月2日「みんなでドンドコ2026」が、北千住シアター1010で開催されます！",
-      "url": "https://adachi.goguynet.jp/2026/07/30/minnade-dondoko/",
-      "published_at": "2026/07/30 12:30",
-      "source": "号外NET 足立区",
-      "image_url": "https://adachi.goguynet.jp/wp-content/uploads/sites/133/2026/07/IMG_0342.jpeg",
-      "event_date": "2026-08-02",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【荒川区】2026年秋、皆の胸をキュンとさせた「あらかわミラクルLOVE！」がサンパール荒川に帰ってきます！無料上映会を開催します！",
-      "url": "https://arakawa.goguynet.jp/2026/08/02/arakawamiracle/",
-      "published_at": "2026/08/02 08:45",
-      "source": "号外NET 荒川区",
-      "image_url": "https://arakawa.goguynet.jp/wp-content/uploads/sites/105/2026/08/Point-Blur_20260802_070637-1280x960.jpg",
-      "event_date": "2026-08-02",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【世田谷区】二子玉川ライズで新しいポイントサービス「ライズ俱楽部」が始まっています！",
-      "url": "https://setagaya.goguynet.jp/2026/08/02/raise/",
-      "published_at": "2026/08/02 07:35",
-      "source": "号外NET 世田谷区",
-      "image_url": "https://setagaya.goguynet.jp/wp-content/uploads/sites/145/2026/07/c478b1a6dedb96603a486610161ab963.jpg",
-      "event_date": "2026-08-02",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【松戸市】参加無料！「おこさらまんち in キテミテマツド」が8月3日・4日に開催♪抽選会や手形アートなど親子で楽しめます",
-      "url": "https://matsudo.goguynet.jp/2026/07/26/post-18828/",
-      "published_at": "2026/07/26 06:48",
-      "source": "号外NET 松戸市",
-      "image_url": "https://matsudo.goguynet.jp/wp-content/uploads/sites/129/2026/07/IMG_8080.jpeg",
-      "event_date": "2026-08-03",
-      "first_seen": "2026-07-29",
-      "recommendation": ""
-    },
-    {
-      "title": "【八潮市】親子で楽しむ「はんこシールづくり」開催！One Rose×aohankoの夏休み企画",
-      "url": "https://yashion.jp/event/41489/",
-      "published_at": "2026年8月3日(月)",
-      "source": "やしおん(八潮市公式)",
-      "image_url": "https://yashion.jp/contents/uploads/2026/08/763177310_17952086733079921_2278059419983763648_n-2-300x217.png",
-      "event_date": "2026-08-03",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【越谷市】イオンレイクタウンで8月イベント相次ぎ中止　kaze・mori",
-      "url": "https://yashion.jp/event/41503/",
-      "published_at": "2026年8月3日(月)",
-      "source": "やしおん(八潮市公式)",
-      "image_url": "https://yashion.jp/contents/uploads/2026/07/AdobeStock_254648767-1-300x200.jpg",
-      "event_date": "2026-08-03",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【草加市】バターサンド専門店「PRESS BUTTER SAND」が期間限定オープン！！",
-      "url": "https://soka.goguynet.jp/2026/08/03/press-butter-sand/",
-      "published_at": "2026/08/03 07:08",
-      "source": "号外NET 草加市",
-      "image_url": "https://soka.goguynet.jp/wp-content/uploads/sites/49/2026/08/IMG_6992.jpeg",
-      "event_date": "2026-08-03",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
-      "title": "【墨田区】両国国技館で今年も開催。夏休み恒例の「相撲健康体操2026」8月3日（月）よりスタートです！",
-      "url": "https://sumida.goguynet.jp/2026/08/02/post-121194/",
-      "published_at": "2026/08/02 08:01",
-      "source": "号外NET 墨田区",
-      "image_url": "https://sumida.goguynet.jp/wp-content/uploads/sites/60/2026/08/IMG_6608-960x960.jpeg",
-      "event_date": "2026-08-03",
-      "first_seen": "2026-08-05",
-      "recommendation": ""
-    },
-    {
       "title": "草加「TITANOTA BASE」が再始動へ！正式オープン前に初の植物イベント開催",
       "url": "https://yashion.jp/event/41529/",
       "published_at": "2026年8月4日(火)",
@@ -1308,6 +571,26 @@
       "recommendation": ""
     },
     {
+      "title": "【台東区】8月11日、上野2丁⽬の「esports Style UENO」にて東京都スポーツ⽂化事業団主催「みんなのｅスポーツフェス2026」が開催されました。",
+      "url": "https://taito.goguynet.jp/2026/08/17/esports/",
+      "published_at": "2026/08/17 07:59",
+      "source": "号外NET 台東区",
+      "image_url": "https://taito.goguynet.jp/wp-content/uploads/sites/235/2026/08/IMG_3373.jpeg",
+      "event_date": "2026-08-11",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【世田谷区】8/11〜10/10まで「せたPay（セタペイ）」の最大10％還元が始まっています！",
+      "url": "https://setagaya.goguynet.jp/2026/08/17/setapei-2/",
+      "published_at": "2026/08/17 07:35",
+      "source": "号外NET 世田谷区",
+      "image_url": "https://setagaya.goguynet.jp/wp-content/uploads/sites/145/2026/08/IMG_8036.jpeg",
+      "event_date": "2026-08-11",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
       "title": "【太田市】8月12日（水）、イオンモール太田にて「伝統芸能わいわいフェスタ」が開催されます！",
       "url": "https://ota.goguynet.jp/2026/07/27/dentougeinouwaiwaifesuta/",
       "published_at": "2026/07/27 06:24",
@@ -1368,6 +651,16 @@
       "recommendation": ""
     },
     {
+      "title": "【千葉市中央区】チーバくんも登場！8月12日からそごう千葉店で「ちばの魅力発見WEEK」開催！親子で楽しめる無料ワークショップも！",
+      "url": "https://chiba.goguynet.jp/2026/08/13/sogo-14/",
+      "published_at": "2026/08/13 06:37",
+      "source": "号外NET 千葉市",
+      "image_url": "https://chiba.goguynet.jp/wp-content/uploads/sites/282/2026/08/35023897_m.jpg",
+      "event_date": "2026-08-12",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
       "title": "【板橋区】8月13日はイオン板橋ショッピングセンターで「ミニセグウェイ体験」を開催！親子で話題の電動バランススクーターに挑戦",
       "url": "https://itabashi.goguynet.jp/2026/07/27/mini-segway-experience/",
       "published_at": "2026/07/27 06:13",
@@ -1375,6 +668,56 @@
       "image_url": "https://itabashi.goguynet.jp/wp-content/uploads/sites/110/2026/07/IMG_9565.jpg",
       "event_date": "2026-08-13",
       "first_seen": "2026-07-29",
+      "recommendation": ""
+    },
+    {
+      "title": "【越谷市】市立図書館でこども向け講演会「深海のナゾを追え！～クジラの骨から深海洞窟へ～」開催",
+      "url": "https://koshigaya.goguynet.jp/2026/08/13/siritsukoshigayatosyokan/",
+      "published_at": "2026/08/13 14:00",
+      "source": "号外NET 越谷市",
+      "image_url": "https://koshigaya.goguynet.jp/wp-content/uploads/sites/48/2026/08/a36c13d5-5c7f-40d0-af11-665cc1676d4b.jpg",
+      "event_date": "2026-08-13",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【松戸市】天心祭2026秋の大盆踊り大会開催へ！",
+      "url": "https://matsudo.goguynet.jp/2026/08/13/post-18911/",
+      "published_at": "2026/08/13 06:48",
+      "source": "号外NET 松戸市",
+      "image_url": "https://matsudo.goguynet.jp/wp-content/uploads/sites/129/2026/08/Gemini_Generated_Image_kj4g11kj4g11kj4g.png",
+      "event_date": "2026-08-13",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【台東区】台東区役所では、8月13日（木）～19日（水）8:30～17:15（最終日は16:00まで）「平和に関するパネル展」を1階ロビーで開催しています。",
+      "url": "https://taito.goguynet.jp/2026/08/18/taitouku-5/",
+      "published_at": "2026/08/18 07:59",
+      "source": "号外NET 台東区",
+      "image_url": "https://taito.goguynet.jp/wp-content/uploads/sites/235/2026/08/IMG_3557.jpeg",
+      "event_date": "2026-08-13",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【葛飾区】今年は会場イベントも♪「葛飾まるごとバル2026」チケット絶賛販売中です！",
+      "url": "https://katsushika.goguynet.jp/2026/08/13/marugotobar-2026/",
+      "published_at": "2026/08/13 09:18",
+      "source": "号外NET 葛飾区",
+      "image_url": "https://katsushika.goguynet.jp/wp-content/uploads/sites/167/2026/08/margotobar4.jpg",
+      "event_date": "2026-08-13",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【世田谷区】覆面現代アーティスト「COIN PARKING DELIVERY」との初のコラボレーションカフェメニューをセサミストリートマーケット玉川高島屋S.C 店にて期間限定で発売します！",
+      "url": "https://setagaya.goguynet.jp/2026/08/13/sesamestreet-5/",
+      "published_at": "2026/08/13 07:35",
+      "source": "号外NET 世田谷区",
+      "image_url": "https://setagaya.goguynet.jp/wp-content/uploads/sites/145/2026/08/main-1081x960.jpg",
+      "event_date": "2026-08-13",
+      "first_seen": "2026-08-18",
       "recommendation": ""
     },
     {
@@ -1388,6 +731,26 @@
       "recommendation": ""
     },
     {
+      "title": "【つくば市】一緒に盛り上がろう！つくばマラソンのボランティアを募集しているそうですよ",
+      "url": "https://tsukuba.goguynet.jp/2026/08/14/tsukuba-marathon-volunteer/",
+      "published_at": "2026/08/14 07:38",
+      "source": "号外NET つくば市",
+      "image_url": "https://tsukuba.goguynet.jp/wp-content/uploads/sites/87/2022/10/24344347_m.jpg",
+      "event_date": "2026-08-14",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【練馬区】「Coconeri（ココネリ）」で、お笑いライブが開催されます！",
+      "url": "https://nerima.goguynet.jp/2026/08/14/owarai-22/",
+      "published_at": "2026/08/14 08:31",
+      "source": "号外NET 練馬区",
+      "image_url": "https://nerima.goguynet.jp/wp-content/uploads/sites/66/2026/08/IMG_6825-1280x960.jpeg",
+      "event_date": "2026-08-14",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
       "title": "【太田市】8月15日（土）、学習文化センターにてオリンピアンや元アスリート、コーチが登壇する「ルミナス ドリームフォーラム2026」が開催されます！",
       "url": "https://ota.goguynet.jp/2026/07/31/luminous-dream-forum/",
       "published_at": "2026/07/31 06:24",
@@ -1395,6 +758,86 @@
       "image_url": "https://ota.goguynet.jp/wp-content/uploads/sites/137/2026/07/24219174_s.jpg",
       "event_date": "2026-08-15",
       "first_seen": "2026-08-05",
+      "recommendation": ""
+    },
+    {
+      "title": "【草加市】「サマーフェスタin氷川町南町会」が開催されます！",
+      "url": "https://soka.goguynet.jp/2026/08/15/summerfesta-2026/",
+      "published_at": "2026/08/15 16:08",
+      "source": "号外NET 草加市",
+      "image_url": "https://soka.goguynet.jp/wp-content/uploads/sites/49/2026/08/IMG_7123.jpeg",
+      "event_date": "2026-08-15",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【越谷市】越谷アルファーズのチアと「ネギばんばんダンス」！市立図書館で子ども向けイベント開催",
+      "url": "https://koshigaya.goguynet.jp/2026/08/15/koshigayashiritutosyokan/",
+      "published_at": "2026/08/15 06:06",
+      "source": "号外NET 越谷市",
+      "image_url": "https://koshigaya.goguynet.jp/wp-content/uploads/sites/48/2026/08/23369719_m.jpg",
+      "event_date": "2026-08-15",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【千葉市中央区】千葉開府900年記念「第51回千葉の親子三代夏祭り」大雨による被害を受け中止に。",
+      "url": "https://chiba.goguynet.jp/2026/08/15/oyakosandaimatsuri/",
+      "published_at": "2026/08/15 06:37",
+      "source": "号外NET 千葉市",
+      "image_url": "https://chiba.goguynet.jp/wp-content/uploads/sites/282/2026/08/3329961_m.jpg",
+      "event_date": "2026-08-15",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【台東区】8月15日（土）より、かっぱ橋かおう会商店街「かっぱの夏休み」売り出し（抽選券配布）期間中です♪お楽しみ抽選会イベントは8月22日（土）11:00～16:00開催ですよ。",
+      "url": "https://taito.goguynet.jp/2026/08/19/kappa-2/",
+      "published_at": "2026/08/19 07:59",
+      "source": "号外NET 台東区",
+      "image_url": "https://taito.goguynet.jp/wp-content/uploads/sites/235/2026/08/IMG_3628.jpeg",
+      "event_date": "2026-08-15",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【台東区】8月15日（土）16日（日）おかちまちパンダ広場で「2026年第8回シタマチふるさと盆踊り大会」（入場無料）が開催予定です。",
+      "url": "https://taito.goguynet.jp/2026/08/12/bonodori-5/",
+      "published_at": "2026/08/12 22:19",
+      "source": "号外NET 台東区",
+      "image_url": "https://taito.goguynet.jp/wp-content/uploads/sites/235/2026/08/IMG_3465.jpeg",
+      "event_date": "2026-08-15",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【葛飾区】アリオ亀有でエコ工作を楽しもう！「かつしかエコフェスティバル in アリオ亀有 2026」開催です",
+      "url": "https://katsushika.goguynet.jp/2026/08/15/ecofesario-2026/",
+      "published_at": "2026/08/15 20:18",
+      "source": "号外NET 葛飾区",
+      "image_url": "https://katsushika.goguynet.jp/wp-content/uploads/sites/167/2026/08/petbottleart.jpg",
+      "event_date": "2026-08-15",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【荒川区】夜の動物達はどうしているのかな？8月15日（土）・16日（日）、あらかわ遊園ナイトズーが開催されますよ！",
+      "url": "https://arakawa.goguynet.jp/2026/08/15/nightzoo/",
+      "published_at": "2026/08/15 08:15",
+      "source": "号外NET 荒川区",
+      "image_url": "https://arakawa.goguynet.jp/wp-content/uploads/sites/105/2026/08/img_5yu6ci.jpg",
+      "event_date": "2026-08-15",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【渋谷区】北渋ランランフェスタ2026のエントリーが始まっています！",
+      "url": "https://shibuya.goguynet.jp/2026/08/15/kitashibu-runrun-festa2026/",
+      "published_at": "2026/08/15 21:21",
+      "source": "号外NET 渋谷区",
+      "image_url": "https://shibuya.goguynet.jp/wp-content/uploads/sites/379/2026/08/PXL_20260811_0627327652-1-1280x960.jpg",
+      "event_date": "2026-08-15",
+      "first_seen": "2026-08-18",
       "recommendation": ""
     },
     {
@@ -1415,6 +858,236 @@
       "image_url": "https://chiba.goguynet.jp/wp-content/uploads/sites/282/2025/06/IMG_2859.jpeg",
       "event_date": "2026-08-16",
       "first_seen": "2026-08-12",
+      "recommendation": ""
+    },
+    {
+      "title": "そらジローがららぽーと新三郷に登場！9月5・6日に「なかよしパーティー」",
+      "url": "https://yashion.jp/event/42253/",
+      "published_at": "2026年8月16日(日)",
+      "source": "やしおん(八潮市公式)",
+      "image_url": "https://yashion.jp/contents/uploads/2026/08/image1_1-6-300x300.jpg",
+      "event_date": "2026-08-16",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "ルミネ北千住で「夏のわくわく駅イベント」8月21・22日開催　JRE POINT抽選や撮影会も",
+      "url": "https://yashion.jp/event/42238/",
+      "published_at": "2026年8月16日(日)",
+      "source": "やしおん(八潮市公式)",
+      "image_url": "https://yashion.jp/contents/uploads/2026/08/768667796_18583437718067328_5362130134017245696_n-240x300.jpg",
+      "event_date": "2026-08-16",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【千葉市若葉区】木を探して謎を解こう！泉自然公園で「夏の樹木ラリー ～夏のネイチャーハント～」開催中",
+      "url": "https://chiba.goguynet.jp/2026/08/16/post-28309/",
+      "published_at": "2026/08/16 19:37",
+      "source": "号外NET 千葉市",
+      "image_url": "https://chiba.goguynet.jp/wp-content/uploads/sites/282/2026/06/IMG_7231.jpeg",
+      "event_date": "2026-08-16",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【足立区】8月16日に「第50回としのうフリーマーケット」が開催！室内開催で雨でも安心♪こどもフリマも！",
+      "url": "https://adachi.goguynet.jp/2026/08/14/toshinofleamarket/",
+      "published_at": "2026/08/14 14:00",
+      "source": "号外NET 足立区",
+      "image_url": "https://adachi.goguynet.jp/wp-content/uploads/sites/133/2026/08/IMG_7100.jpeg",
+      "event_date": "2026-08-16",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【練馬区】ふるさと文化館で、特別展「水を守るー千川家と千川上水の330年ー」が開催されます！",
+      "url": "https://nerima.goguynet.jp/2026/08/16/furusato-27/",
+      "published_at": "2026/08/16 23:45",
+      "source": "号外NET 練馬区",
+      "image_url": "https://nerima.goguynet.jp/wp-content/uploads/sites/66/2026/08/20260816_232615.jpg",
+      "event_date": "2026-08-16",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【世田谷区】二子玉川ライズで開催中のイベント「太陽と星空のサーカス あそぶの夏まつり＆あそぶの教室」はいよいよ8/16まで！",
+      "url": "https://setagaya.goguynet.jp/2026/08/14/taiyotohoshizora/",
+      "published_at": "2026/08/14 07:35",
+      "source": "号外NET 世田谷区",
+      "image_url": "https://setagaya.goguynet.jp/wp-content/uploads/sites/145/2026/08/D0A60202-1807-4B1E-A233-EC867CCA3C78.jpeg",
+      "event_date": "2026-08-16",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "アリオ亀有で「ごっこランドEXPO」8月22・23日開催　親子で仕事体験",
+      "url": "https://yashion.jp/event/42363/",
+      "published_at": "2026年8月17日(月)",
+      "source": "やしおん(八潮市公式)",
+      "image_url": "https://yashion.jp/contents/uploads/2026/08/img_3rnivitdipwks-212x300.jpg",
+      "event_date": "2026-08-17",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "ロボホン、LOVOT、モフリンがレイクタウンに集合！4日間限定「Robot Planet」",
+      "url": "https://yashion.jp/event/42326/",
+      "published_at": "2026年8月17日(月)",
+      "source": "やしおん(八潮市公式)",
+      "image_url": "https://yashion.jp/contents/uploads/2026/08/c4ed41da-e86b-4855-8f97-26e89e275a2f-300x300.jpg",
+      "event_date": "2026-08-17",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "草加健康センターで真夜中の「ラッコ祭り」　男女水着で楽しむ深夜の納涼会",
+      "url": "https://yashion.jp/event/42333/",
+      "published_at": "2026年8月17日(月)",
+      "source": "やしおん(八潮市公式)",
+      "image_url": "https://yashion.jp/contents/uploads/2026/08/RakkoFes_620552194-768x1024-1-225x300.jpg",
+      "event_date": "2026-08-17",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【草加市】まもなく再起動！「TITANOTA BASE(チタノタベース)」でスペシャルイベントが開催されます！",
+      "url": "https://soka.goguynet.jp/2026/08/17/titanotabase-event/",
+      "published_at": "2026/08/17 07:08",
+      "source": "号外NET 草加市",
+      "image_url": "https://soka.goguynet.jp/wp-content/uploads/sites/49/2026/08/IMG_7133.jpeg",
+      "event_date": "2026-08-17",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【つくば市】復元建物がライトアップ！平沢官衙遺跡歴史ひろばで「万灯夏まつり」が開催されます。",
+      "url": "https://tsukuba.goguynet.jp/2026/08/17/mando-natsu-matsuri2026/",
+      "published_at": "2026/08/17 07:38",
+      "source": "号外NET つくば市",
+      "image_url": "https://tsukuba.goguynet.jp/wp-content/uploads/sites/87/2024/01/hirasawakangaiiseki2401-5.jpg",
+      "event_date": "2026-08-17",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【江東区】本田圭佑氏が考案、シーズンを締めくくる最高峰の舞台「4v4 FINAL 2026-27」が2027年2月に「TOYOTA ARENA TOKYO」で開催決定",
+      "url": "https://koto.goguynet.jp/2026/08/17/4v4_2026/",
+      "published_at": "2026/08/17 22:49",
+      "source": "号外NET 江東区",
+      "image_url": "https://koto.goguynet.jp/wp-content/uploads/sites/112/2026/08/20250828_124243ssssssss.jpg",
+      "event_date": "2026-08-17",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【荒川区】日暮里・谷中の総鎮守・諏方神社。諏方神社大祭・御神幸祭の開催日が告知されています！",
+      "url": "https://arakawa.goguynet.jp/2026/08/17/suwajinjyataisai/",
+      "published_at": "2026/08/17 22:45",
+      "source": "号外NET 荒川区",
+      "image_url": "https://arakawa.goguynet.jp/wp-content/uploads/sites/105/2026/08/20260817_134445.jpg",
+      "event_date": "2026-08-17",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【練馬区】牧野記念庭園で、企画展「海を渡ってきた植物の物語」が開催されます。",
+      "url": "https://nerima.goguynet.jp/2026/08/17/makino-30/",
+      "published_at": "2026/08/17 23:39",
+      "source": "号外NET 練馬区",
+      "image_url": "https://nerima.goguynet.jp/wp-content/uploads/sites/66/2026/08/20260817_232158.jpg",
+      "event_date": "2026-08-17",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "アリオ亀有に「CloverWorks POP UP SHOP 2026」登場！人気アニメのグッズが集結",
+      "url": "https://yashion.jp/event/42366/",
+      "published_at": "2026年8月18日(火)",
+      "source": "やしおん(八潮市公式)",
+      "image_url": "https://yashion.jp/contents/uploads/2026/08/img_3rni9hpvjgw0c-212x300.jpg",
+      "event_date": "2026-08-18",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【草加市】ついにトマトビールが完成☆ミノリテラス草加にてビアガーデンが開催されます！",
+      "url": "https://soka.goguynet.jp/2026/08/18/minoriterrace-beergarden/",
+      "published_at": "2026/08/18 07:08",
+      "source": "号外NET 草加市",
+      "image_url": "https://soka.goguynet.jp/wp-content/uploads/sites/49/2026/08/IMG_7150-921x960.jpeg",
+      "event_date": "2026-08-18",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【越谷市】南越谷阿波踊りに合わせて「南越谷ラクーン」で夏イベント開催！かき氷やご当地アイスが大集合",
+      "url": "https://koshigaya.goguynet.jp/2026/08/18/rakuunivent/",
+      "published_at": "2026/08/18 06:06",
+      "source": "号外NET 越谷市",
+      "image_url": "https://koshigaya.goguynet.jp/wp-content/uploads/sites/48/2026/08/main-2-1280x960.jpg",
+      "event_date": "2026-08-18",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【春日部市】親子でスポーツを楽しもう！市民体育館で「親子ふれあいスポーツ教室」が2026年9月から全5回開催されますよ♪",
+      "url": "https://kasukabe.goguynet.jp/2026/08/18/oyakosports/",
+      "published_at": "2026/08/18 07:05",
+      "source": "号外NET 春日部市",
+      "image_url": "https://kasukabe.goguynet.jp/wp-content/uploads/sites/33/2020/04/img_4980-1280x720.jpg",
+      "event_date": "2026-08-18",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【川口市】市民優先枠は8月18日(火)から受付スタート！第44回川口マラソンが12月6日に開催されます！",
+      "url": "https://kawaguchi.goguynet.jp/2026/08/14/post-52229/",
+      "published_at": "2026/08/14 23:57",
+      "source": "号外NET 川口市",
+      "image_url": "https://kawaguchi.goguynet.jp/wp-content/uploads/sites/51/2026/08/IMG_3243-2.jpeg",
+      "event_date": "2026-08-18",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【板橋区】板橋区の学生が育てたウニを食べ比べ！『UNI1グランプリ2026』SNS審査を実施中",
+      "url": "https://itabashi.goguynet.jp/2026/08/18/uni-grand-prix/",
+      "published_at": "2026/08/18 09:43",
+      "source": "号外NET 板橋区",
+      "image_url": "https://itabashi.goguynet.jp/wp-content/uploads/sites/110/2026/08/Screenshot_20260818-091342.png",
+      "event_date": "2026-08-18",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【練馬区】「東洋商事」で業務用食品の「青空市場」が開催されます！",
+      "url": "https://nerima.goguynet.jp/2026/08/18/aozora-41/",
+      "published_at": "2026/08/18 23:48",
+      "source": "号外NET 練馬区",
+      "image_url": "https://nerima.goguynet.jp/wp-content/uploads/sites/66/2026/08/92355417d8c245c4f9f4ded59ca78d12-1280x960.jpg",
+      "event_date": "2026-08-18",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "八潮で「生成AI×Google集客」を学ぶ無料セミナー　SEO・MEO・AIOを実践解説",
+      "url": "https://yashion.jp/event/42383/",
+      "published_at": "2026年8月19日(水)",
+      "source": "やしおん(八潮市公式)",
+      "image_url": "https://yashion.jp/contents/uploads/2026/08/2ae50454-b2d3-4ab8-bbc2-5a0ce481a729-300x300.jpg",
+      "event_date": "2026-08-19",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【台東区】8月19日（水）”サザンナイト”・20日（木）”DJパーティ”午後5時～9時に西浅草の東本願寺境内で「東本願寺盆踊り」が開催されます。",
+      "url": "https://taito.goguynet.jp/2026/08/15/higashi/",
+      "published_at": "2026/08/15 07:59",
+      "source": "号外NET 台東区",
+      "image_url": "https://taito.goguynet.jp/wp-content/uploads/sites/235/2026/08/IMG_3125.jpeg",
+      "event_date": "2026-08-19",
+      "first_seen": "2026-08-18",
       "recommendation": ""
     },
     {
@@ -1445,6 +1118,26 @@
       "image_url": "https://chiba.goguynet.jp/wp-content/uploads/sites/282/2026/06/IMG_7231.jpeg",
       "event_date": "2026-08-21",
       "first_seen": "2026-08-05",
+      "recommendation": ""
+    },
+    {
+      "title": "【越谷市】今年で第40回！「南越谷阿波踊り」が8月21日～23日に開催、95連が参加予定",
+      "url": "https://koshigaya.goguynet.jp/2026/08/12/minamikoshigayaawaodori2026/",
+      "published_at": "2026/08/12 17:30",
+      "source": "号外NET 越谷市",
+      "image_url": "https://koshigaya.goguynet.jp/wp-content/uploads/sites/48/2026/08/IMG_0278.jpg",
+      "event_date": "2026-08-21",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【茨城県】夏の最後のお買い得♪あみプレミアム・アウトレットにて8/21～30の期間「PREMIUM OUTLETS® BARGAIN」が開催されます",
+      "url": "https://tsukuba.goguynet.jp/2026/08/16/premium-outlets-bargain/",
+      "published_at": "2026/08/16 07:38",
+      "source": "号外NET つくば市",
+      "image_url": "https://tsukuba.goguynet.jp/wp-content/uploads/sites/87/2026/08/main-3.jpg",
+      "event_date": "2026-08-21",
+      "first_seen": "2026-08-18",
       "recommendation": ""
     },
     {
@@ -1548,6 +1241,36 @@
       "recommendation": ""
     },
     {
+      "title": "【春日部市】第2回春日部大凧花火大会が2026年8月22日（土）に開催！ 駐車場は例年から変更があるのでご注意ください",
+      "url": "https://kasukabe.goguynet.jp/2026/08/17/odakohanabi-2/",
+      "published_at": "2026/08/17 23:05",
+      "source": "号外NET 春日部市",
+      "image_url": "https://kasukabe.goguynet.jp/wp-content/uploads/sites/33/2026/08/IMG_2749.jpeg",
+      "event_date": "2026-08-22",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【杉並区】西永福駅前で「西永福FESTIVAL」が8月22日(土)に初開催されます！グルメにライブ、家族で楽しめる企画も♪",
+      "url": "https://suginami.goguynet.jp/2026/08/14/nishieifuku-festival2026/",
+      "published_at": "2026/08/14 07:44",
+      "source": "号外NET 杉並区",
+      "image_url": "https://suginami.goguynet.jp/wp-content/uploads/sites/69/2026/08/IMG_7824-793x960.png",
+      "event_date": "2026-08-22",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【世田谷区】今年も三軒茶屋にサンバがやってくる！8/22〜23「三茶LATIN FESTIVALが開催」されます。",
+      "url": "https://setagaya.goguynet.jp/2026/08/18/sanchalatinfestival/",
+      "published_at": "2026/08/18 07:35",
+      "source": "号外NET 世田谷区",
+      "image_url": "https://setagaya.goguynet.jp/wp-content/uploads/sites/145/2026/08/IMG_8020.jpeg",
+      "event_date": "2026-08-22",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
       "title": "【春日部市】8月23日（日）ハルカイトで「給食風ランチ付き凧づくり教室」開催！ただいま電話申込受付中♪",
       "url": "https://kasukabe.goguynet.jp/2026/08/04/takodukuri-2/",
       "published_at": "2026/08/04 07:05",
@@ -1568,6 +1291,46 @@
       "recommendation": ""
     },
     {
+      "title": "【越谷市】一面のひまわり畑が迷路に！8月23日「大相模ひまわりフェスタ」開催、花の摘み取りも楽しめます",
+      "url": "https://koshigaya.goguynet.jp/2026/08/19/himawarifesta/",
+      "published_at": "2026/08/19 06:06",
+      "source": "号外NET 越谷市",
+      "image_url": "https://koshigaya.goguynet.jp/wp-content/uploads/sites/48/2026/08/34810387_m.jpg",
+      "event_date": "2026-08-23",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【松戸市】夏休み最後は忍者に変身！8月23日「忍術学園」が開催されます。",
+      "url": "https://matsudo.goguynet.jp/2026/08/19/post-18961/",
+      "published_at": "2026/08/19 06:48",
+      "source": "号外NET 松戸市",
+      "image_url": "https://matsudo.goguynet.jp/wp-content/uploads/sites/129/2026/08/IMG_6425.jpeg",
+      "event_date": "2026-08-23",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【春日部市】事前申込不要・参加無料！ 8月23日（日）ウイング・ハット春日部で「健康スポ・レクフェスタ2026」が開催されます♪",
+      "url": "https://kasukabe.goguynet.jp/2026/08/15/kenkousupo/",
+      "published_at": "2026/08/15 23:55",
+      "source": "号外NET 春日部市",
+      "image_url": "https://kasukabe.goguynet.jp/wp-content/uploads/sites/33/2019/01/winghat-768x512.jpeg",
+      "event_date": "2026-08-23",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【太田市】8月23日（日）、下田島町にある愛信保育園で「Le’Lien marché vol.6」が開催されます！",
+      "url": "https://ota.goguynet.jp/2026/08/15/lelien-marche-vol-6/",
+      "published_at": "2026/08/15 06:24",
+      "source": "号外NET 大田区",
+      "image_url": "https://ota.goguynet.jp/wp-content/uploads/sites/137/2026/07/30275928_s.jpg",
+      "event_date": "2026-08-23",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
       "title": "【世田谷区】8/25に経堂コルティで開催されるキッズおしごと体験イベントの参加応募は7/26までです！",
       "url": "https://setagaya.goguynet.jp/2026/07/18/kidsosigoto/",
       "published_at": "2026/07/18 07:35",
@@ -1575,6 +1338,16 @@
       "image_url": "https://setagaya.goguynet.jp/wp-content/uploads/sites/145/2026/07/IMG_6830.jpeg",
       "event_date": "2026-08-25",
       "first_seen": "2026-07-29",
+      "recommendation": ""
+    },
+    {
+      "title": "【江東区】参加無料！　有明ガーデンで「電気×防災」の体験型謎解きイベントが8月25日から3日間限定で開催",
+      "url": "https://koto.goguynet.jp/2026/08/13/ariake-garden_looop/",
+      "published_at": "2026/08/13 13:49",
+      "source": "号外NET 江東区",
+      "image_url": "https://koto.goguynet.jp/wp-content/uploads/sites/112/2026/08/main-3.png",
+      "event_date": "2026-08-25",
+      "first_seen": "2026-08-18",
       "recommendation": ""
     },
     {
@@ -1638,6 +1411,46 @@
       "recommendation": ""
     },
     {
+      "title": "【松戸市】常盤平の夏夜を楽しもう！8月29日・30日「サマーナイトガーデン」が開催されます。",
+      "url": "https://matsudo.goguynet.jp/2026/08/18/post-18960/",
+      "published_at": "2026/08/18 06:48",
+      "source": "号外NET 松戸市",
+      "image_url": "https://matsudo.goguynet.jp/wp-content/uploads/sites/129/2026/08/IMG_8450.jpeg",
+      "event_date": "2026-08-29",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【春日部市】夜の公園で思い出づくり♪ 8月29日（土）「第2回 夕涼み in ゆめのもり」開催！音楽会やワークショップ、花火コーナーも！",
+      "url": "https://kasukabe.goguynet.jp/2026/08/14/yusuzumiinyumenomori/",
+      "published_at": "2026/08/14 08:05",
+      "source": "号外NET 春日部市",
+      "image_url": "https://kasukabe.goguynet.jp/wp-content/uploads/sites/33/2023/03/IMG_9537-1280x960.jpeg",
+      "event_date": "2026-08-29",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【千葉市中央区】8月29日は「寺子屋」で大人向け講座！千葉公園で花瓶を彩る「Flower base Painting」が開催されます",
+      "url": "https://chiba.goguynet.jp/2026/08/17/shibaniwa-4/",
+      "published_at": "2026/08/17 06:37",
+      "source": "号外NET 千葉市",
+      "image_url": "https://chiba.goguynet.jp/wp-content/uploads/sites/282/2026/01/IMG_5953.jpeg",
+      "event_date": "2026-08-29",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【墨田区】8月29日 喫茶キシノ（ノウドひきふね）で「浄瑠璃ってなぁに？」が開催されます。",
+      "url": "https://sumida.goguynet.jp/2026/08/16/noudo202608/",
+      "published_at": "2026/08/16 08:01",
+      "source": "号外NET 墨田区",
+      "image_url": "https://sumida.goguynet.jp/wp-content/uploads/sites/60/2026/08/IMG_6749-1100x960.jpeg",
+      "event_date": "2026-08-29",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
       "title": "八潮メセナで心温まる舞台を　埼玉ミュージカルスクールが8月30日に本公演",
       "url": "https://yashion.jp/event/41161/",
       "published_at": "2026年7月28日(火)",
@@ -1665,6 +1478,26 @@
       "image_url": "https://chiba.goguynet.jp/wp-content/uploads/sites/282/2026/08/IMG_8859.jpeg",
       "event_date": "2026-08-30",
       "first_seen": "2026-08-12",
+      "recommendation": ""
+    },
+    {
+      "title": "【太田市】8月30日（日）、本町にある高山神社で「占いマルシェと祝詞書写体験」が開催されます！",
+      "url": "https://ota.goguynet.jp/2026/08/17/takayamajinjya/",
+      "published_at": "2026/08/17 06:24",
+      "source": "号外NET 大田区",
+      "image_url": "https://ota.goguynet.jp/wp-content/uploads/sites/137/2026/07/30275922_s.jpg",
+      "event_date": "2026-08-30",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【渋谷区】8月30日、結成20周年の「侍BRASS」が、オペラシティで響宴二十年祭を開催します！",
+      "url": "https://shibuya.goguynet.jp/2026/08/16/samuraibrass/",
+      "published_at": "2026/08/16 23:39",
+      "source": "号外NET 渋谷区",
+      "image_url": "https://shibuya.goguynet.jp/wp-content/uploads/sites/379/2026/08/PXL_20260816_123353073.MP_-1-e1786884037809-1280x960.jpg",
+      "event_date": "2026-08-30",
+      "first_seen": "2026-08-18",
       "recommendation": ""
     },
     {
@@ -1698,6 +1531,16 @@
       "recommendation": ""
     },
     {
+      "title": "【柏市】9/1価格改定前最後のチャンス！柏の老舗パスタメーカー「ニューオークボ」で8/20～8/23『夏の地域還元フェア』開催します",
+      "url": "https://kashiwa.goguynet.jp/2026/08/17/newokubosummerkangenfair/",
+      "published_at": "2026/08/17 07:01",
+      "source": "号外NET 柏市",
+      "image_url": "https://kashiwa.goguynet.jp/wp-content/uploads/sites/80/2026/08/namapasuta.jpg",
+      "event_date": "2026-09-01",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
       "title": "【千葉市稲毛区】最大75％OFF！ワタリジャパンが千葉物流センターで「アウトレット販売」を9月5日・6日の2日間限定開催",
       "url": "https://chiba.goguynet.jp/2026/08/08/watarijapan/",
       "published_at": "2026/08/08 06:37",
@@ -1705,6 +1548,26 @@
       "image_url": "https://chiba.goguynet.jp/wp-content/uploads/sites/282/2026/08/watarijapan.jpg",
       "event_date": "2026-09-05",
       "first_seen": "2026-08-12",
+      "recommendation": ""
+    },
+    {
+      "title": "浅草・雷門前が踊りの輪に　「雷門盆踊り」9月5日開催、今年で10回目",
+      "url": "https://yashion.jp/event/42343/",
+      "published_at": "2026年8月18日(火)",
+      "source": "やしおん(八潮市公式)",
+      "image_url": "https://yashion.jp/contents/uploads/2026/08/kaminarimonbon-212x300.jpg",
+      "event_date": "2026-09-05",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【荒川区】電車好き集まれ！9月５日（土）、日暮里駅前イベント広場にて「第3回親子で楽しむ にっぽりトレインフェス」が開催されますよ！",
+      "url": "https://arakawa.goguynet.jp/2026/08/13/nipporitrainfes-3/",
+      "published_at": "2026/08/13 22:25",
+      "source": "号外NET 荒川区",
+      "image_url": "https://arakawa.goguynet.jp/wp-content/uploads/sites/105/2026/08/Point-Blur_20260813_203449-1280x960.jpg",
+      "event_date": "2026-09-05",
+      "first_seen": "2026-08-18",
       "recommendation": ""
     },
     {
@@ -1728,6 +1591,16 @@
       "recommendation": ""
     },
     {
+      "title": "八潮のBUILD MOTORが長瀞ラフティング企画　9月6日開催、申込締切迫る",
+      "url": "https://yashion.jp/event/42372/",
+      "published_at": "2026年8月18日(火)",
+      "source": "やしおん(八潮市公式)",
+      "image_url": "https://yashion.jp/contents/uploads/2026/08/20260817-1-300x166.jpg",
+      "event_date": "2026-09-06",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
       "title": "【荒川区】9月11日（金）・12日（土）、第15回ふらっとにっぽりクリエイティブ・ショーケースが開催されます！一足早く、秋のお気に入りを見つけませんか！",
       "url": "https://arakawa.goguynet.jp/2026/08/09/akinookiniiri/",
       "published_at": "2026/08/09 23:45",
@@ -1745,6 +1618,16 @@
       "image_url": "https://matsudo.goguynet.jp/wp-content/uploads/sites/129/2026/08/421F0AB3-D90B-476C-A561-0A326848C6C1-1076x960.jpeg",
       "event_date": "2026-09-12",
       "first_seen": "2026-08-12",
+      "recommendation": ""
+    },
+    {
+      "title": "9月12日開催！八潮花火フェスティバル準備本格化　出演6組決定、観覧席も販売中",
+      "url": "https://yashion.jp/event/42202/",
+      "published_at": "2026年8月15日(土)",
+      "source": "やしおん(八潮市公式)",
+      "image_url": "https://yashion.jp/contents/uploads/2026/08/8aa8f013-2201-4493-9c47-dfe05a627ca2-300x225.jpg",
+      "event_date": "2026-09-12",
+      "first_seen": "2026-08-18",
       "recommendation": ""
     },
     {
@@ -1768,6 +1651,16 @@
       "recommendation": ""
     },
     {
+      "title": "【台東区】9月13日（日）台東一丁目区民館で開催される「江戸庶民と台東区域の祭礼・信仰」江戸に親しむ講演会（参加無料）の申込締切は、8月17日（月）必着です。",
+      "url": "https://taito.goguynet.jp/2026/08/14/taitou-4/",
+      "published_at": "2026/08/14 07:59",
+      "source": "号外NET 台東区",
+      "image_url": "https://taito.goguynet.jp/wp-content/uploads/sites/235/2026/08/IMG_3483.jpeg",
+      "event_date": "2026-09-13",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
       "title": "【台東区】9月19日（土）開催の上野公園野外ステージ「ゼロから楽しむカツベン✕シネマ芸楽祭～夏の野外無声映画祭～」区民招待の応募締切は、8月12日（水）必着です！",
       "url": "https://taito.goguynet.jp/2026/08/10/katsuben/",
       "published_at": "2026/08/10 22:29",
@@ -1778,6 +1671,26 @@
       "recommendation": ""
     },
     {
+      "title": "【荒川区】中国伝統芸能・変面ショーを楽しみませんか！9月20日（日）、変面ショー in 都電カフェ！が開催されますよ！",
+      "url": "https://arakawa.goguynet.jp/2026/08/14/henmenshow-2/",
+      "published_at": "2026/08/14 16:45",
+      "source": "号外NET 荒川区",
+      "image_url": "https://arakawa.goguynet.jp/wp-content/uploads/sites/105/2026/08/1786671826308-1080x960.jpg",
+      "event_date": "2026-09-20",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【太田市】9月21日（月）、毎年恒例の「野口皮膚科医院納涼祭2026」が開催されます！",
+      "url": "https://ota.goguynet.jp/2026/08/14/noguchihifukaiin/",
+      "published_at": "2026/08/14 06:24",
+      "source": "号外NET 大田区",
+      "image_url": "https://ota.goguynet.jp/wp-content/uploads/sites/137/2026/08/33240516_s.jpg",
+      "event_date": "2026-09-21",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
       "title": "【千葉市中央区】愛犬と楽しむ秋のナイトイベント！「WAN LOVE MARKET NIGHT」が9月26日に千葉みなとのさんばし広場で開催されます！",
       "url": "https://chiba.goguynet.jp/2026/08/04/sanbashihiroba-6/",
       "published_at": "2026/08/04 06:37",
@@ -1785,6 +1698,16 @@
       "image_url": "https://chiba.goguynet.jp/wp-content/uploads/sites/282/2026/03/IMG_6971.jpeg",
       "event_date": "2026-09-26",
       "first_seen": "2026-08-05",
+      "recommendation": ""
+    },
+    {
+      "title": "【春日部市近郊】春日部駅構内でポスターを発見！「ダンガンロンパシリーズ×東武動物公園」コラボイベントが9月27日まで開催中♪",
+      "url": "https://kasukabe.goguynet.jp/2026/08/13/tobu_danganronpa/",
+      "published_at": "2026/08/13 07:05",
+      "source": "号外NET 春日部市",
+      "image_url": "https://kasukabe.goguynet.jp/wp-content/uploads/sites/33/2026/08/tobu_danganronpa.jpg",
+      "event_date": "2026-09-27",
+      "first_seen": "2026-08-18",
       "recommendation": ""
     },
     {
@@ -1805,6 +1728,16 @@
       "image_url": "https://misato-yashio.goguynet.jp/wp-content/uploads/sites/314/2024/10/IMG_0239.jpeg",
       "event_date": "2026-10-05",
       "first_seen": "2026-07-20"
+    },
+    {
+      "title": "【板橋区】障がいの有無にかかわらず楽しめる！バリアフリー演劇『ヘレン・ケラー』が10月10日に板橋区立文化会館で開催",
+      "url": "https://itabashi.goguynet.jp/2026/08/13/helen-keller/",
+      "published_at": "2026/08/13 08:43",
+      "source": "号外NET 板橋区",
+      "image_url": "https://itabashi.goguynet.jp/wp-content/uploads/sites/110/2026/08/sub5-1266x960.jpg",
+      "event_date": "2026-10-10",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
     },
     {
       "title": "【三郷市】つくばエクスプレス三郷中央駅からすぐ、におどり公園で10月12日(土)に開催された「misato style 2024」に行ってきました！",
@@ -1834,6 +1767,16 @@
       "image_url": "https://misato-yashio.goguynet.jp/wp-content/uploads/sites/314/2024/05/IMG_6721.jpeg",
       "event_date": "2026-10-23",
       "first_seen": "2026-07-22",
+      "recommendation": ""
+    },
+    {
+      "title": "【板橋区】高島平の「eスポフィールド」で『GeoGuessr』国内大会「RASHINBAN 2026」開催決定！10月24日・25日の2日間",
+      "url": "https://itabashi.goguynet.jp/2026/08/16/geoguessr/",
+      "published_at": "2026/08/16 21:23",
+      "source": "号外NET 板橋区",
+      "image_url": "https://itabashi.goguynet.jp/wp-content/uploads/sites/110/2026/08/Screenshot_20260816-210720.png",
+      "event_date": "2026-10-24",
+      "first_seen": "2026-08-18",
       "recommendation": ""
     },
     {
@@ -2142,7 +2085,47 @@
       "event_date": "2027-01-23",
       "first_seen": "2026-08-12",
       "recommendation": ""
+    },
+    {
+      "title": "【中野区】1月24日清掃とコーヒーを組み合わせた活動が行われます。",
+      "url": "https://nakano.goguynet.jp/2026/01/20/ccc/",
+      "published_at": "2026/01/20 06:47",
+      "source": "号外NET 中野区",
+      "image_url": "https://nakano.goguynet.jp/wp-content/uploads/sites/62/2026/01/33824786_m.jpg",
+      "event_date": "2027-01-24",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【中野区】なかのZEROで1月24日、街とアートをつなぐプレイベントが開かれます。",
+      "url": "https://nakano.goguynet.jp/2026/01/09/marugoto-bijutsukan/",
+      "published_at": "2026/01/09 06:47",
+      "source": "号外NET 中野区",
+      "image_url": "https://nakano.goguynet.jp/wp-content/uploads/sites/62/2026/01/154858-4-f962622e7d9b326d8a38a5d1f26219ad-3543x2126-1.png",
+      "event_date": "2027-01-24",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【中野区】中野区役所ナカノバで1月25日（日）不登校をテーマにした交流・相談が行われます。",
+      "url": "https://nakano.goguynet.jp/2026/01/24/nijin/",
+      "published_at": "2026/01/24 06:47",
+      "source": "号外NET 中野区",
+      "image_url": "https://nakano.goguynet.jp/wp-content/uploads/sites/62/2026/01/99150-712-0033566b25ccddad4b82479419c12263-2560x1440-1.png",
+      "event_date": "2027-01-25",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
+    },
+    {
+      "title": "【中野区】NYA Cafeで1月25日、沖縄好きのための「はちうくし交流会 2026」が開かれます。",
+      "url": "https://nakano.goguynet.jp/2026/01/17/nya-cafe/",
+      "published_at": "2026/01/17 06:47",
+      "source": "号外NET 中野区",
+      "image_url": "https://nakano.goguynet.jp/wp-content/uploads/sites/62/2026/01/23074274_l.jpg",
+      "event_date": "2027-01-25",
+      "first_seen": "2026-08-18",
+      "recommendation": ""
     }
   ],
-  "generated_at": "2026-08-12"
+  "generated_at": "2026-08-18"
 }
