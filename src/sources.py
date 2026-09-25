@@ -35,7 +35,6 @@ SOURCES = [
     {"type": "goguynet", "label": "号外NET 中野区", "url": "https://nakano.goguynet.jp/category/cat_event/"},
     {"type": "goguynet", "label": "号外NET 杉並区", "url": "https://suginami.goguynet.jp/category/cat_event/"},
     {"type": "goguynet", "label": "号外NET 世田谷区", "url": "https://setagaya.goguynet.jp/category/cat_event/"},
-    {"type": "goguynet", "label": "号外NET 大田区", "url": "https://ota.goguynet.jp/category/cat_event/"},
     {"type": "goguynet", "label": "号外NET 文京区", "url": "https://bunkyo.goguynet.jp/category/cat_event/"},
     {"type": "goguynet", "label": "号外NET 渋谷区", "url": "https://shibuya.goguynet.jp/category/cat_event/"},
     {"type": "goguynet", "label": "号外NET 新宿区", "url": "https://shinjuku.goguynet.jp/category/cat_event/"},

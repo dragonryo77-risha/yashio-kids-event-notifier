@@ -14,6 +14,9 @@ from datetime import date, timedelta
 _ROOT = os.path.join(os.path.dirname(__file__), "..")
 DATA_PATH = os.path.join(_ROOT, "data", "events.json")
 DOCS_PATH = os.path.join(_ROOT, "docs", "events.json")
+# events.jsonからは古いイベントが間引かれるため、一度見た記事URLは別途記録して再評価を防ぐ
+SEEN_PATH = os.path.join(_ROOT, "data", "seen_urls.json")
+MAX_SEEN = 5000
 
 KEEP_PAST_DAYS = 14   # 過去のイベントもしばらくは一覧に残す
 MAX_EVENTS = 500
@@ -54,3 +57,16 @@ def save_events(events: dict[str, dict]) -> None:
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=2)
+
+
+def load_seen_urls() -> list[str]:
+    if not os.path.exists(SEEN_PATH):
+        return []
+    with open(SEEN_PATH, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_seen_urls(urls: list[str]) -> None:
+    unique = list(dict.fromkeys(urls))[-MAX_SEEN:]
+    with open(SEEN_PATH, "w", encoding="utf-8") as f:
+        json.dump(unique, f, ensure_ascii=False, indent=0)

@@ -142,9 +142,11 @@ function toDate(iso) {
 function eventCardHtml(e) {
   const rec = e.recommendation ? `<div class="rec">💡 ${e.recommendation}</div>` : "";
   const meta = e.published_at ? `${e.source} ・ ${e.published_at}` : e.source;
-  return `<a class="card" href="${e.url}" target="_blank">
+  const pick = e.pick ? `<div class="meta" style="color:var(--accent);font-weight:bold">⭐ 厳選おすすめ${e.place ? " ・ 📍" + e.place : ""}</div>` : "";
+  return `<a class="card" href="${e.url}" target="_blank"${e.pick ? ' style="border-color:var(--accent)"' : ""}>
     <img src="${e.image_url || ''}" onerror="this.style.display='none'">
     <div>
+      ${pick}
       <div class="title">${e.title}</div>
       <div class="meta">${meta}</div>
       ${rec}

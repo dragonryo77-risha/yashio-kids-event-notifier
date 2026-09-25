@@ -1,114 +1,54 @@
-# 八潮駅から電車1.5時間圏 子供向けイベント通知
+# 八潮駅から電車1.5時間圏 こどもイベント厳選通知
 
-八潮市周辺〜東京23区の地域ニュースサイト・自治体サイトを毎週自動巡回し、
-子供(未就学児)・ファミリー向けと思われる新着イベントをLINEに通知する個人用ツール。
+八潮市周辺〜東京23区の地域ニュースサイト・自治体サイトを毎週巡回し、さらにWeb検索で大型イベントも探したうえで、
+**「2〜3歳の子どもが本当に楽しめる」「規模が大きい」イベントだけを5〜7件に厳選**してLINEに通知する個人用ツール。
 
-## 仕組み
+## 仕組み(2026-09-26 改修)
 
-- `src/sources.py` に登録したサイトを毎週1回スクレイピング(各サイトの「イベント」カテゴリのみ、埼玉・千葉・茨城方面と東京23区の主要エリアをカバー)
-- `src/filters.py` で明らかに対象外なもの(求人・トラブル系など)だけを除外し、子供向けに限らず
-  家族で楽しめそうなものや珍しいイベントも幅広く報告対象にする
-- タイトルから開催日を正規表現でまず推定し(`src/date_utils.py`)、Claude APIが文脈込みで
-  最終判定(`src/recommend.py`)。チケット先行販売日・受付開始日などを開催日と誤認識しないようにしている
-- 新着イベントについて、Claude APIで「おすすめポイント」を1〜2文生成。子供が体験・学びを得られそうな
-  要素(工作・自然観察・職業体験など)があれば積極的に触れる(`src/recommend.py`)
-- これまでに見つけたイベントは `data/events.json`(内部用)/ `docs/events.json`(カレンダーページ用)に蓄積し、重複通知を防止
-- 新着のうち、開催日が通知日以降(または開催日不明)のものだけを LINE Messaging API の「ブロードキャスト配信」でカード形式(Flex Message)で通知
-- GitHub Pages(`docs/`フォルダ)でカレンダー形式の一覧ページを公開
-- GitHub Actions が毎週水曜 7:30(JST) に自動実行(PCを起動しておく必要なし)
+PC上のWindowsタスクスケジューラ「KidsEventNotifier」が毎週水曜7:30に `run_hidden.vbs` → `run.ps1` を実行する(PCが起動/スリープ中である必要あり)。
 
-対象サイトは「いこーよ」「Walkerplus」のような大手ポータルではなく、
-公開されている地域ニュースサイト(号外NET各エリア版)や八潮市公式ポータルに限定しています。
-大手ポータルは利用規約でスクレイピングや転載を明確に禁止しているため対象外にしています。
+1. `python src/main.py collect` … `src/sources.py` のサイトを巡回し、`src/filters.py` で明らかな対象外を除外。
+   一度見た記事は `data/seen_urls.json` に記録して再評価しない。終了済みと明らかな記事も除外し、`data/candidates.json` に書き出す
+2. `claude -p`(Claude Code、追加費用なし) … `prompt.md` の基準で候補を採点し、Web検索で候補外の大型イベント
+   (車両基地公開・動物園/水族館の特別企画・幕張メッセ等のこどもフェスなど)も探して、上位を `data/picks.json` に書き出す
+3. `python src/main.py notify` … 厳選イベントをLINEに**縦1枚のランキングカード**で通知(横スワイプなし、各行タップで詳細)。
+   `data/events.json` / `docs/events.json` を更新し、GitHubへpush → カレンダーページ(GitHub Pages)にも⭐付きで反映
 
-## セットアップ手順
+実行ログは `logs/last_run.log`。以前のGitHub Actions + Claude API方式(API費用がかかり、実際にはAPIキー未設定で厳選が機能していなかった)は廃止した。
 
-### 1. LINE Messaging APIチャネルを作成する(通知の受け取り口)
+## セットアップ(PC側)
 
-LINE Notifyは2025年3月末で終了しているため、LINE公式アカウント(Messaging API)を使います。
-
-1. [LINE Developers Console](https://developers.line.biz/console/) にLINEアカウントでログイン
-2. 「プロバイダー」を新規作成(名前は任意、例: `個人用`)
-3. 「新規チャネル作成」→「Messaging API」を選択し、チャネルを作成
-   - チャネル名: 例「子供イベント通知Bot」
-   - 業種などは個人利用で適当なものを選択
-4. 作成したチャネルの「Messaging API設定」タブを開く
-   - 一番下の「チャネルアクセストークン(長期)」を発行し、値をコピーして控えておく
-   - 「応答メッセージ」は「オフ」に、「Webhookの利用」もオフのままでOK(送るだけなので不要)
-5. 同じ画面のQRコードを自分のLINEアプリで読み取り、このBotを友だち追加する
-   - ブロードキャスト配信は「友だち全員」に届く仕組みなので、自分だけが友だち追加していれば実質専用通知になります
-
-### 2. GitHubリポジトリを作成してこのフォルダをpushする
-
-```bash
-cd "yashio-kids-event-notifier"
-git init
-git add .
-git commit -m "init: 子供向けイベント通知アプリ"
-```
-
-GitHub上で新規リポジトリを作成し、表示される手順に従って `git remote add origin ...` → `git push -u origin main` を実行してください。
-カレンダーページをGitHub Pages(無料)で公開するには、リポジトリを **Public** にする必要があります(中身はスクレイピングした公開イベント情報のみで個人情報は含みません)。
-
-### 3. GitHub Secretsにトークンを登録する
-
-リポジトリの `Settings → Secrets and variables → Actions → New repository secret` から、以下の2つを登録します。
-
-- Name: `LINE_CHANNEL_ACCESS_TOKEN` / Value: 手順1で控えたチャネルアクセストークン
-- Name: `ANTHROPIC_API_KEY` / Value: [Anthropic Console](https://console.anthropic.com/settings/keys) で発行したAPIキー(「おすすめポイント」生成に使用。未設定でも通知自体は動作しますが、おすすめポイントは空になります)
-
-### 4. GitHub Pagesを有効にする(カレンダーページ)
-
-`Settings → Pages` を開き、
-
-- Source: `Deploy from a branch`
-- Branch: `main` / フォルダ `/docs`
-
-を選んで保存します。数分後に `https://<ユーザー名>.github.io/<リポジトリ名>/` でカレンダーページが見られるようになります。
-(このリポジトリの場合は `https://dragonryo77-risha.github.io/yashio-kids-event-notifier/`)
-
-### 5. 動作確認
-
-`Actions` タブ → `Notify kids events` → `Run workflow` で手動実行できます。
-成功すればログに取得件数などが出て、新着があればLINEに通知が届きます。
-その後は毎週水曜7:30(JST)に自動実行されます(曜日・時刻を変えたい場合は `.github/workflows/notify.yml` の `cron` を編集してください。UTC表記なので JST-9時間 で指定します)。
+1. **LINEトークンを置く**: [LINE Developers Console](https://developers.line.biz/console/) → 該当チャネル →「Messaging API設定」→「チャネルアクセストークン(長期)」を発行(再発行)し、
+   値だけをこのフォルダの `line_token.txt` に保存する(Gitには載らない設定済み)
+2. **Pythonライブラリ**: `python -m pip install -r requirements.txt`
+3. **動作確認**: `run.ps1` を右クリック →「PowerShellで実行」。LINEに届けばOK
+4. 厳選基準を変えたいとき → `prompt.md` を編集(対象年齢・選ばないもの・件数など)
+5. LINEに送らず中身だけ確認したいとき → `python src/main.py notify --dry-run`
 
 ## ファイル一覧・役割
 
 ```
 yashio-kids-event-notifier/
-├── README.md                    このファイル(セットアップ手順・使い方)
-├── requirements.txt              Pythonの依存ライブラリ一覧
-├── .github/workflows/notify.yml  GitHub Actionsの自動実行設定(いつ・何を実行するか)
-├── src/                          プログラム本体
-│   ├── main.py                     全体の処理の流れをまとめた起点ファイル(ここから実行される)
-│   ├── sources.py                  巡回対象サイトの一覧(エリアを増やすときはここに追記)
-│   ├── scraper.py                  各サイトのHTMLからイベント情報を抜き出す処理
-│   ├── filters.py                  報告対象外(求人・トラブル系など)を除外するキーワード
-│   ├── date_utils.py               タイトルから開催日を推定する処理
-│   ├── recommend.py                Claude APIで「おすすめポイント」文章を生成する処理
-│   ├── notifier.py                 LINEにカード形式(Flex Message)で通知を送る処理
-│   └── store.py                    見つけたイベントの蓄積・重複防止・データ保存
-├── data/events.json               内部用のイベント蓄積データ(自動更新・直接編集不要)
-└── docs/                          GitHub Pagesで公開するカレンダーページ
-    ├── index.html                    カレンダーページの見た目・動作(HTML/CSS/JS)
-    └── events.json                   カレンダーページ表示用のイベントデータ(自動更新・直接編集不要)
+├── README.md             このファイル
+├── run.ps1               毎週の処理全体(収集→Claude厳選→LINE通知→GitHub反映)
+├── run_hidden.vbs        タスクスケジューラ用(PowerShellの窓を出さずにrun.ps1を実行)
+├── prompt.md             Claude Codeへの厳選基準の指示書(ここを直すと選ばれ方が変わる)
+├── line_token.txt        LINEトークン(各自作成・Git管理外)
+├── requirements.txt      Pythonの依存ライブラリ一覧
+├── src/
+│   ├── main.py             collect / notify の起点
+│   ├── sources.py          巡回対象サイトの一覧
+│   ├── scraper.py          各サイトのHTMLからイベント情報を抜き出す
+│   ├── filters.py          明らかな対象外(求人・事件・相談会など)を除外するキーワード
+│   ├── date_utils.py       タイトルから開催日の参考値を推定
+│   ├── notifier.py         LINEに縦1枚ランキングで通知
+│   └── store.py            イベント蓄積・既読URL管理
+├── data/events.json      蓄積データ / data/seen_urls.json 既読URL(自動更新)
+└── docs/                 GitHub Pagesのカレンダーページ
 ```
-
-**触ることが多いのはこの3つだけです:**
-
-- 対象エリアを増やしたい → `src/sources.py`
-- 子供向け判定のキーワードを調整したい → `src/filters.py`
-- 通知の曜日・時刻を変えたい → `.github/workflows/notify.yml`
-
-## カスタマイズ
-
-- **対象エリアを増やす**: `src/sources.py` に追記(号外NET系は `https://<エリア>.goguynet.jp/category/cat_event/` の形式が多くのエリアで使えます)
-- **除外キーワードを調整する**: `src/filters.py` の `NG_KEYWORDS` を編集(ここに追加した語を含むタイトルは報告対象外になります)
-- **通知時刻**: `.github/workflows/notify.yml` の `cron`
 
 ## 注意点
 
-- 対象サイトのHTML構造が変わるとスクレイピングが失敗することがあります(その場合はActionsのログにWARNとして出力され、他のサイトの処理は継続されます)。動かなくなったら `src/scraper.py` の該当パーサーを更新してください。
+- 対象サイトのHTML構造が変わるとスクレイピングが失敗することがあります(その場合は`logs/last_run.log`にWARNとして出力され、他のサイトの処理は継続されます)。動かなくなったら `src/scraper.py` の該当パーサーを更新してください。
 - あくまで個人・私的利用を想定しています。取得したデータの再配布や商用利用はしないでください。
 - イベントの正確な開催日時は各記事の本文に書かれていることが多いため、通知に含まれるリンク先で必ず確認してください(通知に出る日付は記事の掲載日であり、開催日そのものではない場合があります)。

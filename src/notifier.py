@@ -4,88 +4,107 @@ LINE Notifyは2025年3月末で終了したため、LINE公式アカウント(Me
 ブロードキャスト機能を使う。ブロードキャストは「友だち全員」への配信だが、
 このBotを友だち追加するのは基本的に自分だけなので、実質的に自分専用の通知になる。
 
-見た目重視のため、テキストではなくFlex Message(カード形式)で送る。
+横スワイプのカルーセルはスマホで見づらいため、厳選イベントを「縦1枚のランキングカード」
+(Flex Messageのbubble 1枚)にまとめて送る。各行をタップすると記事が開く。
 """
+import json
 import os
+from datetime import date
 
 import requests
 
 LINE_BROADCAST_URL = "https://api.line.me/v2/bot/message/broadcast"
-BUBBLES_PER_CAROUSEL = 10
-MAX_CAROUSELS = 4  # + サマリーのテキストメッセージ1件 = 合計5件(ブロードキャスト上限)
-PLACEHOLDER_IMAGE = "https://placehold.co/1024x682?text=NO+IMAGE"
+MAX_ROWS = 8
+ACCENT = "#e91e63"
+RANK_MARKS = ["①", "②", "③", "④", "⑤", "⑥", "⑦", "⑧"]
+WEEKDAYS = "月火水木金土日"
 
 
-def _bubble(e: dict) -> dict:
-    image_url = e.get("image_url") or PLACEHOLDER_IMAGE
-    date_text = e.get("event_date") or e.get("published_at") or "日付不明"
-    body_contents = [
-        {"type": "text", "text": date_text, "size": "sm", "color": "#e91e63", "weight": "bold"},
-        {"type": "text", "text": e["title"], "wrap": True, "weight": "bold", "size": "md"},
-        {"type": "text", "text": e["source"], "size": "xs", "color": "#999999"},
+def _format_date(e: dict) -> str:
+    start = e.get("event_date")
+    if not start:
+        return "日程は記事で確認"
+
+    def fmt(iso: str) -> str:
+        d = date.fromisoformat(iso)
+        return f"{d.month}/{d.day}({WEEKDAYS[d.weekday()]})"
+
+    end = e.get("end_date")
+    if end and end != start:
+        return f"{fmt(start)}〜{fmt(end)}"
+    return fmt(start)
+
+
+def _row(rank: int, e: dict) -> dict:
+    stars = max(1, min(3, int(e.get("stars") or 1)))
+    meta = _format_date(e)
+    if e.get("place"):
+        meta += f"  📍{e['place']}"
+    contents = [
+        {"type": "text", "text": meta, "size": "xs", "color": ACCENT, "weight": "bold", "wrap": True},
+        {
+            "type": "text",
+            "text": f"{RANK_MARKS[rank]} {e['title']}",
+            "size": "md", "weight": "bold", "wrap": True, "maxLines": 3,
+        },
+        {"type": "text", "text": "★" * stars + "☆" * (3 - stars), "size": "xs", "color": "#f5a623"},
     ]
     if e.get("recommendation"):
-        body_contents.append({
-            "type": "text",
-            "text": f"💡 {e['recommendation']}",
-            "wrap": True,
-            "size": "xs",
-            "color": "#555555",
-            "margin": "md",
+        contents.append({
+            "type": "text", "text": e["recommendation"], "size": "sm", "color": "#555555", "wrap": True,
         })
+    contents.append({"type": "text", "text": "タップで詳細 ›", "size": "xxs", "color": "#999999", "align": "end"})
     return {
-        "type": "bubble",
-        "hero": {
-            "type": "image",
-            "url": image_url,
-            "size": "full",
-            "aspectRatio": "20:13",
-            "aspectMode": "cover",
-        },
-        "body": {
-            "type": "box",
-            "layout": "vertical",
-            "spacing": "sm",
-            "contents": body_contents,
-        },
-        "footer": {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-                {
-                    "type": "button",
-                    "style": "primary",
-                    "color": "#e91e63",
-                    "action": {"type": "uri", "label": "詳細を見る", "uri": e["url"]},
-                }
-            ],
-        },
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "xs",
+        "paddingAll": "md",
+        "contents": contents,
+        "action": {"type": "uri", "label": "詳細", "uri": e["url"]},
     }
 
 
-def build_messages(new_events: list[dict], calendar_url: str | None) -> list[dict]:
-    carousels: list[dict] = []
-    for i in range(0, len(new_events), BUBBLES_PER_CAROUSEL):
-        chunk = new_events[i:i + BUBBLES_PER_CAROUSEL]
-        carousels.append({
-            "type": "flex",
-            "altText": f"子供向けイベント新着 {len(chunk)}件",
-            "contents": {"type": "carousel", "contents": [_bubble(e) for e in chunk]},
-        })
-        if len(carousels) >= MAX_CAROUSELS:
-            break
+def build_messages(picks: list[dict], calendar_url: str | None) -> list[dict]:
+    if not picks:
+        text = "【こどもイベント】今週は特におすすめできる新着イベントはありませんでした。"
+        if calendar_url:
+            text += f"\n\n全件はカレンダーで見られます:\n{calendar_url}"
+        return [{"type": "text", "text": text}]
 
-    shown = min(len(new_events), MAX_CAROUSELS * BUBBLES_PER_CAROUSEL)
-    remaining = len(new_events) - shown
-    summary = f"【子供向けイベント通知】新着 {len(new_events)} 件"
-    if remaining > 0:
-        summary += f"\n(カードは{shown}件のみ表示。残り{remaining}件はカレンダーで確認できます)"
+    rows: list[dict] = []
+    for i, e in enumerate(picks[:MAX_ROWS]):
+        if i > 0:
+            rows.append({"type": "separator"})
+        rows.append(_row(i, e))
+
+    bubble = {
+        "type": "bubble",
+        "size": "giga",
+        "header": {
+            "type": "box",
+            "layout": "vertical",
+            "backgroundColor": ACCENT,
+            "paddingAll": "lg",
+            "contents": [
+                {"type": "text", "text": "🎈 今週のこどもイベント厳選", "color": "#ffffff",
+                 "weight": "bold", "size": "lg"},
+                {"type": "text", "text": f"子どもが楽しめる・規模の大きい催しを{min(len(picks), MAX_ROWS)}件",
+                 "color": "#ffffff", "size": "xs"},
+            ],
+        },
+        "body": {"type": "box", "layout": "vertical", "paddingAll": "none", "contents": rows},
+    }
     if calendar_url:
-        summary += f"\n\nカレンダーで見る:\n{calendar_url}"
-
-    messages: list[dict] = [{"type": "text", "text": summary}]
-    messages.extend(carousels)
-    return messages[:5]
+        bubble["footer"] = {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [{
+                "type": "button", "style": "link", "height": "sm",
+                "action": {"type": "uri", "label": "カレンダーで全件を見る", "uri": calendar_url},
+            }],
+        }
+    alt = "今週のこどもイベント厳選: " + " / ".join(e["title"][:20] for e in picks[:3])
+    return [{"type": "flex", "altText": alt[:400], "contents": bubble}]
 
 
 def send_line_broadcast(messages: list[dict]) -> None:
@@ -106,10 +125,10 @@ def send_line_broadcast(messages: list[dict]) -> None:
         raise RuntimeError(f"LINE通知の送信に失敗しました: {res.status_code} {res.text}")
 
 
-def notify_new_events(new_events: list[dict], calendar_url: str | None = None) -> None:
-    if not new_events:
-        print("新着イベントなし。通知はスキップします。")
+def notify_picks(picks: list[dict], calendar_url: str | None = None, dry_run: bool = False) -> None:
+    messages = build_messages(picks, calendar_url)
+    if dry_run:
+        print(json.dumps(messages, ensure_ascii=False, indent=2))
         return
-    messages = build_messages(new_events, calendar_url)
     send_line_broadcast(messages)
-    print(f"LINEに{len(new_events)}件の新着イベントを通知しました。")
+    print(f"LINEに厳選{len(picks[:MAX_ROWS])}件を通知しました。")

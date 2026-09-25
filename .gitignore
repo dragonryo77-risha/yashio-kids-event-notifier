@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
 .venv/
+line_token.txt
+data/candidates.json
+data/picks.json
+logs/
